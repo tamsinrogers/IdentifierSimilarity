@@ -57,7 +57,7 @@ def sort_by_last_name(names_list):
     return names_list
 
 print(
-    "this list should be alphbetical by last name:" +
+    "this list should be alphbetical by last name: " +
     str(
         sort_by_last_name(
             [
@@ -103,7 +103,6 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 4: MOST HOLES IN ONE
 # IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
-# BUG MUST BE INTRODUCED
 def most_least_holes_in_one(player_list, scorecard_list):
     l = len(player_list)
     most_holes = 0
@@ -114,7 +113,7 @@ def most_least_holes_in_one(player_list, scorecard_list):
         k = len(scorecard_list[i])
         num_hole_in_ones = 0
         for j in range(k):
-            if scorecard_list[i][j] == 1:
+            if scorecard_list[i][i] == 1: # here is bug, should be [i][j]
                 num_hole_in_ones += 1
         if num_hole_in_ones > most_holes:
             most_holes_player = player_list[i]
@@ -134,6 +133,6 @@ print(
                 [4, 2, 1, 1, 1, 3, 1],
                 [6, 2, 1, 3, 4, 3, 2]
             ]    
-        )
+        ) # should print (Ben, Tamsin)
     )
 )
