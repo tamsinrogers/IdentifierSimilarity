@@ -7,8 +7,7 @@
 
 # -------------------------------------------------------------------------- #
 # SNIPPET 1: SENTENCE TO ALL CAPS
-# BUG MUST BE INTRODUCED
-# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
+# ORTHOGRAPHIC
 def sentence_to_all_caps(s):
     a = ""
     for b in s:
@@ -31,8 +30,7 @@ print(
 
 # -------------------------------------------------------------------------- #
 # SNIPPET 2: SORT NAMES ALPHABETICALLY BY LAST NAME, DISREGARDING FIRST NAME
-# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
-# BUG MUST BE INTRODUCED
+# ORTHOGRAPHIC
 def sort_by_last_name(names_list):
     l = len(names_list)
     for i in range(l):
@@ -73,18 +71,17 @@ print(
 
 # -------------------------------------------------------------------------- #
 # SNIPPET 3: SEPARATE VOWEL WORDS
-# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
-# BUG MUST BE INTRODUCED
+# ORTHOGRAPHIC
 def separate_vowel_words(string):
-    vowel_words = ""
-    consonant_words = ""
+    words1 = ""
+    words2 = ""
     for word in string.split():
         if word[0] in ["a", "e", "i", "o", "u"]:
-            vowel_words = vowel_words + word + " "
+            words1 = words1 + word + " "
         else:
-            consonant_words = consonant_words + word + " "
+            words1 = words2 + word + " " # here is the bug, should be words2 = ...
 
-    return vowel_words, consonant_words
+    return words1, words2
 
 print(
     str(
@@ -97,7 +94,7 @@ print(
 
 # -------------------------------------------------------------------------- #
 # SNIPPET 4: MOST HOLES IN ONE
-# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
+# ORTHOGRAPHIC
 def most_least_holes_in_one(player_list, scorecard_list):
     l = len(player_list)
     most_holes = 0
