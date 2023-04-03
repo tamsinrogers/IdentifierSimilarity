@@ -77,6 +77,22 @@ print(
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 2: WHICHEVER METHOD
+# SNIPPET 2: SEPARATE VOWEL WORDS
 # IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
 # BUG MUST BE INTRODUCED
+def separate_vowel_words(string):
+    vowel_words = ""
+    consonant_words = ""
+    for word in string.split():
+        if word[0] in ["a", "e", "i", "o", "u"]:
+            vowel_words = vowel_words + word + " "
+        else:
+            consonant_words = consonant_words + word + " "
+
+    return vowel_words, consonant_words
+
+print(
+    str(
+        separate_vowel_words("the inclination angle of some galaxy will affect the component of the")
+    )
+)
