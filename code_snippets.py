@@ -30,29 +30,24 @@ print(
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 2: SORT NAMES ALPHABETICALLY BY LAST NAME
+# SNIPPET 2: SORT NAMES ALPHABETICALLY BY LAST NAME, DISREGARDING FIRST NAME
 # IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
 # BUG MUST BE INTRODUCED
 def sort_by_last_name(names_list):
     l = len(names_list)
     for i in range(l):
-        min_index = i
-        for j in range(i + 1, l):
-            j_last_name = names_list[j].split()[-1]
-            min_last_name = names_list[min_index].split()[-1]
+        minindex = i
+        for myindex in range(i + 1, l):
+            my_last_name = names_list[minindex].split()[-1] # bug here, should be names_list[myindex]
+            min_last_name = names_list[minindex].split()[-1]
             check_index = 0
-            while ord(j_last_name[check_index].lower()) == ord(min_last_name[check_index].lower()):
-                check_index += 1
-                if check_index > len(j_last_name) - 1 or check_index > len(min_last_name) - 1:
-                    check_index = 0
-                    break
-            if ord(j_last_name[check_index].lower()) < ord(min_last_name[check_index].lower()):
-                min_index = j
-        if min_index != i:
+            if ord(my_last_name[check_index].lower()) < ord(min_last_name[check_index].lower()):
+                minindex = myindex
+        if minindex != i:
             former_i = names_list[i]
-            former_min = names_list[min_index]
+            former_min = names_list[minindex]
             names_list[i] = former_min
-            names_list[min_index] = former_i
+            names_list[minindex] = former_i
     
     return names_list
 
