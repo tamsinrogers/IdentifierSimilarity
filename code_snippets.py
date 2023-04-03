@@ -2,15 +2,114 @@
 # similar or different identifiers, validated using objective criteria
 # from an IS paper. The relevant lines should be flagged with a comment
 
+
+
+
 # -------------------------------------------------------------------------- #
-# SNIPPET 1: MOST AND LEAST HOLES IN ONE
-# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES (ORTHOGRAPHICAL)
-def mini_golf_results(player_list, scorecard_list):
+# SNIPPET 1: SENTENCE TO ALL CAPS
+# BUG MUST BE INTRODUCED
+# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
+def sentence_to_all_caps(sentence):
+    new_str = ""
+    for letter in sentence:
+        if letter.isalpha():
+            ascii_num = ord(letter)
+            ascii_num -= 32
+            new_char = chr(ascii_num)
+        else:
+            new_char = letter
+        new_str += new_char
+
+    return new_str
+
+print(
+    sentence_to_all_caps("this sentence should be printed uppercase>>./1?")
+)
+
+
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 2: SORT NAMES ALPHABETICALLY BY LAST NAME
+# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
+# BUG MUST BE INTRODUCED
+def sort_by_last_name(names_list):
+    l = len(names_list)
+    for i in range(l):
+        min_index = i
+        for j in range(i + 1, l):
+            j_last_name = names_list[j].split()[-1]
+            min_last_name = names_list[min_index].split()[-1]
+            check_index = 0
+            while ord(j_last_name[check_index].lower()) == ord(min_last_name[check_index].lower()):
+                check_index += 1
+                if check_index > len(j_last_name) - 1 or check_index > len(min_last_name) - 1:
+                    check_index = 0
+                    break
+            if ord(j_last_name[check_index].lower()) < ord(min_last_name[check_index].lower()):
+                min_index = j
+        if min_index != i:
+            former_i = names_list[i]
+            former_min = names_list[min_index]
+            names_list[i] = former_min
+            names_list[min_index] = former_i
+    
+    return names_list
+
+print(
+    "this list should be alphbetical by last name:" +
+    str(
+        sort_by_last_name(
+            [
+                "Ben Raivel",
+                "Tamsin Rogers",
+                "Someone Rogers",
+                "Milo Lani-Caputo",
+                "Alan Turing",
+                "Nelson Mandela",
+                "George W. Bush"
+            ]
+        )
+    )
+)
+
+
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 3: SEPARATE VOWEL WORDS
+# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
+# BUG MUST BE INTRODUCED
+def separate_vowel_words(string):
+    vowel_words = ""
+    consonant_words = ""
+    for word in string.split():
+        if word[0] in ["a", "e", "i", "o", "u"]:
+            vowel_words = vowel_words + word + " "
+        else:
+            consonant_words = consonant_words + word + " "
+
+    return vowel_words, consonant_words
+
+print(
+    str(
+        separate_vowel_words("the inclination angle of some galaxy will affect the component of the")
+    )
+)
+
+
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 4: MOST HOLES IN ONE
+# IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
+# BUG MUST BE INTRODUCED
+def most_least_holes_in_one(player_list, scorecard_list):
     l = len(player_list)
-    most_holes = 0 # sum1
-    least_holes = 1e9 # sum2
-    most_holes_player = "" # player1
-    least_holes_player = "" # player2
+    most_holes = 0
+    least_holes = 1e9
+    most_holes_player = ""
+    least_holes_player = ""
     for i in range(l):
         k = len(scorecard_list[i])
         num_hole_in_ones = 0
@@ -28,15 +127,13 @@ def mini_golf_results(player_list, scorecard_list):
 
 print(
     str(
-        mini_golf_results(
-            ["Fred", "Ron", "Ginny", "George"],
+        most_least_holes_in_one(
+            ["Milo", "Ben", "Tamsin"],
             [
                 [1, 2, 4, 3, 1, 1, 3],
                 [4, 2, 1, 1, 1, 3, 1],
-                [6, 2, 1, 3, 4, 3, 2],
-                [1, 2, 3, 2, 3, 4, 4]
+                [6, 2, 1, 3, 4, 3, 2]
             ]    
         )
     )
-    # SHOULD PRINT (Ron, Ginny)
 )
