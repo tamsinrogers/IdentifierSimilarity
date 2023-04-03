@@ -9,18 +9,18 @@
 # SNIPPET 1: SENTENCE TO ALL CAPS
 # BUG MUST BE INTRODUCED
 # IDENTIFIERS MUST BE REPLACED BY SIMILAR ONES
-def sentence_to_all_caps(sentence):
-    new_str = ""
-    for letter in sentence:
-        if letter.isalpha():
-            ascii_num = ord(letter)
-            ascii_num -= 32
-            new_char = chr(ascii_num)
+def sentence_to_all_caps(s):
+    a = ""
+    for b in s:
+        if b.isalpha():
+            c = ord(b)
+            c -= 32
+            d = chr(c)
+            a += b # here is the bug, should be a += d
         else:
-            new_char = letter
-        new_str += new_char
+            a += b
 
-    return new_str
+    return a
 
 print(
     sentence_to_all_caps("this sentence should be printed uppercase>>./1?")
