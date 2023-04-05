@@ -128,3 +128,89 @@ print(
         ) # should print (Ben, Tamsin)
     )
 )
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET ?:
+# PHONOLOGICAL
+
+def sort_table(table):
+
+    table_rows = len(table)
+    table_cols = len(table[0])
+
+    labels = []
+    for col in range(table_cols):
+        labels.append(table[0][col])
+
+    labels.sort()
+
+    sort_idxs = []
+    for label in labels:
+        sort_idxs.append(table[0].index(label))
+
+    sorted_table = []
+    for row in range(table_rows):
+
+        sorted_row = []
+        for col in range(table_cols):
+            sorted_row.append(table[row][sort_idxs[col]])
+
+        sorted_table.append(sorted_row)
+
+    return sorted_table
+
+
+table = [['bannana', 'cat', 'apple'],
+         [10, 4, 8],
+         [2, 3, -9]]
+
+print(sort_table(table))
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET ?:
+# PHONOLOGICAL
+
+def store_scores(csv, scores, names=None):
+
+    try:
+        store = open(csv, 'r')
+    except FileNotFoundError:
+        store = open(csv, 'w')
+        if names is None:
+            print('Error: path to file with headers OR list of name required')
+            return None
+        store.write(','.join(names))
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET ?:
+# PHONOLOGICAL
+
+def cast_cat(map, cats, to='int'):
+
+    inv_map = {val: key for key, val in map.items()}
+
+    cast_vals = []
+
+    for cat in cats:
+
+        if to is 'int':
+            if type(cat) is int:
+                cast_vals.append(cat)
+            elif type(cat) is str:
+                cast_vals.append(map[cat])
+
+        elif to is 'str':
+            if type(cat) is str:
+                cast_vals.append(cat)
+            elif type(cat) is int:
+                cast_vals.append(inv_map[cat])
+
+    return cast_vals
+
+map = {'dog': 1, 'cat': 2, 'lizard': 3, 'bird': 4}
+cats1 = [1, 3, 2, 1, 4]
+cats2 = ['dog', 1, 3, 'bird']
+print(cast_cat(map, cats1, 'str'))
