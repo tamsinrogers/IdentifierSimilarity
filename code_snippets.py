@@ -62,7 +62,7 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 3: SEPARATE VOWEL WORDS
 # ORTHOGRAPHIC
-def separate_vowel_words(string):
+def func3(string):
     words1 = ""
     words2 = ""
     for word in string.split():
@@ -75,7 +75,7 @@ def separate_vowel_words(string):
 
 print(
     str(
-        separate_vowel_words("the inclination angle of some galaxy will affect the component of the")
+        func3("the inclination angle of some galaxy will affect the component of the")
     )
 )
 
@@ -85,7 +85,7 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 4: MOST HOLES IN ONE
 # ORTHOGRAPHIC
-def most_least_holes_in_one(player_list, scorecard_list):
+def func4(player_list, scorecard_list):
     l = len(player_list)
     most_holes = 0
     least_holes = 1e9
@@ -108,7 +108,7 @@ def most_least_holes_in_one(player_list, scorecard_list):
 
 print(
     str(
-        most_least_holes_in_one(
+        func4(
             ["Milo", "Ben", "Tamsin"],
             [
                 [1, 2, 4, 3, 1, 1, 3],
@@ -164,7 +164,7 @@ print(
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 5: SMALL STRING, SHORT STRING
+# SNIPPET 6: SMALL STRING, SHORT STRING
 # SEMANTIC
 def func6(str_list):
     short_string = False
@@ -187,3 +187,12 @@ def func6(str_list):
 func6(
     ["treble", "bass", "microphone", "amplifier", "guitar", "glasses", "anyone"]
 )
+
+
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 7: SMALL STRING, SHORT STRING
+# SEMANTIC
+def func7():
+    pass
