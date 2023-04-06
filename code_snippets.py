@@ -262,7 +262,7 @@ print("\n\n")
 # -------------------------------------------------------------------------- #
 # SNIPPET 6: SMALL STRING, SHORT STRING
 # SEMANTIC
-def func6_b(str_list):
+def func6_a(str_list):
     five_str = False
     ten_str = False
     for little_string in str_list:
@@ -311,7 +311,7 @@ print("\n\n")
 # SNIPPET 7: CHAR VS LETTER
 # SEMANTIC
 # if a character is in a string, but the full string isn't in the string, print the char
-def func7_b(input_list, string):
+def func7_a(input_list, string):
     output_list = []
     for substring in input_list:
         for char in substring:
@@ -356,6 +356,36 @@ print("\n\n")
 # if you begin while started, print
 # if you stop while started, then end
 # if you stop while stopped, print
+def func8_a(input_list):
+    l = len(input_list)
+    i = 0
+    is_started = False
+    begin = False
+    is_stopped = True
+    end = False
+    while i < l:
+        if input_list[i] != 0 and is_stopped == True:
+            begin = True
+        elif input_list[i] == 0 and is_stopped == True:
+            print(input_list[i])
+        elif input_list[i] != 0 and is_started == True:
+            print(input_list[i])
+        elif input_list[i] == 0 and is_started == True:
+            end = True
+
+        if end:
+            is_stopped = True
+            is_started = False
+            begin = False
+            end = False
+        if begin:
+            is_started = True
+            is_stopped = False
+            begin = False
+            end = False
+        
+        i += 1
+
 def func8_b(input_list):
     l = len(input_list)
     i = 0
