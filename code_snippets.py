@@ -2,7 +2,8 @@
 # similar or different identifiers, validated using objective criteria
 # from an IS paper. The relevant lines should be flagged with a comment
 
-
+import math
+import random
 
 
 # -------------------------------------------------------------------------- #
@@ -196,13 +197,13 @@ def cast_cat(map, cats, to='int'):
 
     for cat in cats:
 
-        if to is 'int':
+        if to == 'int':
             if type(cat) is int:
                 cast_vals.append(cat)
             elif type(cat) is str:
                 cast_vals.append(map[cat])
 
-        elif to is 'str':
+        elif to == 'str':
             if type(cat) is str:
                 cast_vals.append(cat)
             elif type(cat) is int:
@@ -214,3 +215,45 @@ map = {'dog': 1, 'cat': 2, 'lizard': 3, 'bird': 4}
 cats1 = [1, 3, 2, 1, 4]
 cats2 = ['dog', 1, 3, 'bird']
 print(cast_cat(map, cats1, 'str'))
+
+
+import math
+
+def wave(n_points, wave_nu):
+
+    new = []
+
+    for n in range(n_points):
+
+        x = math.pi*n
+        y = math.sin(wave_nu*x)
+        new.append(round(y, 2))
+
+    return new
+
+print(wave(4, 0.5))
+
+
+# ROW RHO
+import random
+
+def rand_sparse(n, rho):
+    mat = []
+    for row in range(n):
+        new_row = []
+        for col in range(n):
+            if random.random() < rho:
+                new_row.append(1)
+            else:
+                new_row.append(0)
+        mat.append(new_row)
+
+    return mat
+
+
+mat = rand_sparse(3, 0.5)
+
+for row in mat:
+    print(row)
+
+# question: something like "which of the following are plausible output"
