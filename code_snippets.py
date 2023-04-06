@@ -2,67 +2,57 @@
 # similar or different identifiers, validated using objective criteria
 # from an IS paper. The relevant lines should be flagged with a comment
 
+# orthographic, phonological, semantic
 
 
+# FIX TO MAKE WITHOUT BUGS AND PROBABLY SIMPLER FOR MILO
+# adding/rolling dice numbers
+# splitting and appending lists
+# last index in a list
 
 # -------------------------------------------------------------------------- #
 # SNIPPET 1: SENTENCE TO ALL CAPS
 # ORTHOGRAPHIC
-def sentence_to_all_caps(s):
+def func1(s):
     a = ""
     for b in s:
         if b.isalpha():
+            # get ascii value of b
             c = ord(b)
             c -= 32
+            # convert ascii number to char
             d = chr(c)
-            a += b # here is the bug, should be a += d
+            a += d
         else:
             a += b
 
     return a
 
 print(
-    sentence_to_all_caps("this sentence should be printed uppercase>>./1?")
+    func1("In 2 years, I will get three new pets!")
 )
 
 
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 2: SORT NAMES ALPHABETICALLY BY LAST NAME, DISREGARDING FIRST NAME
+# SNIPPET 2: SORT EVENS ASCENDING, ODDS DESCENDING
 # ORTHOGRAPHIC
-def sort_by_last_name(names_list):
-    l = len(names_list)
-    for i in range(l):
-        minindex = i
-        for myindex in range(i + 1, l):
-            my_last_name = names_list[minindex].split()[-1] # bug here, should be names_list[myindex]
-            min_last_name = names_list[minindex].split()[-1]
-            check_index = 0
-            if ord(my_last_name[check_index].lower()) < ord(min_last_name[check_index].lower()):
-                minindex = myindex
-        if minindex != i:
-            former_i = names_list[i]
-            former_min = names_list[minindex]
-            names_list[i] = former_min
-            names_list[minindex] = former_i
-    
-    return names_list
+def func2(lst1):
+    # sort the list in ascending order
+    lst1 = sorted(lst1, reverse=False)
+    lst2 = []
+    lst3 = []
+    for number in lst1:
+        if number % 2 == 0:
+            lst2.append(number)
+        else:
+            lst3.insert(0, number)
+    return lst2, lst3
 
 print(
-    "this list should be alphbetical by last name: " +
-    str(
-        sort_by_last_name(
-            [
-                "Ben Raivel",
-                "Tamsin Rogers",
-                "Someone Rogers",
-                "Milo Lani-Caputo",
-                "Alan Turing",
-                "Nelson Mandela",
-                "George W. Bush"
-            ]
-        )
+    func2(
+        [6, 8, 35, 17, 0, 9, 45]
     )
 )
 
@@ -76,10 +66,10 @@ def separate_vowel_words(string):
     words1 = ""
     words2 = ""
     for word in string.split():
-        if word[0] in ["a", "e", "i", "o", "u"]:
+        if word[0] in ["a", "e", "i", "o", "u", "y"]:
             words1 = words1 + word + " "
         else:
-            words1 = words2 + word + " " # here is the bug, should be words2 = ...
+            words2 = words2 + word + " "
 
     return words1, words2
 
@@ -105,7 +95,7 @@ def most_least_holes_in_one(player_list, scorecard_list):
         k = len(scorecard_list[i])
         num_hole_in_ones = 0
         for j in range(k):
-            if scorecard_list[i][i] == 1: # here is bug, should be [i][j]
+            if scorecard_list[i][j] == 1:
                 num_hole_in_ones += 1
         if num_hole_in_ones > most_holes:
             most_holes_player = player_list[i]
@@ -128,3 +118,10 @@ print(
         ) # should print (Ben, Tamsin)
     )
 )
+
+
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 5: 
+# SEMANTIC
