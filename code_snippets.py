@@ -192,17 +192,17 @@ func6(
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 7: NUMBER VS INTEGER
+# SNIPPET 7: CHAR VS LETTER
 # SEMANTIC
 # if a character is in a string, but the full string isn't in the string, print the char
-def func7(input_list, target):
+def func7(input_list, string):
     output_list = []
     for char in input_list:
         for letter in char:
             add = False
-            if letter in target:
+            if letter in string:
                 add = True
-            if char in target:
+            if char in string:
                 add = False
             if add:
                 output_list.append(letter)
@@ -219,5 +219,43 @@ print(
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 7: NUMBER VS INTEGER
+# SNIPPET 8: START AND BEGIN
 # SEMANTIC
+# if you begin while stopped, then start
+# if you begin while started, print
+# if you stop while started, then end
+# if you stop while stopped, print
+def func8(input_list):
+    l = len(input_list)
+    i = 0
+    start = False
+    begin = False
+    stop = True
+    end = False
+    while i < l:
+        if input_list[i] != 0 and stop == True:
+            begin = True
+        elif input_list[i] == 0 and stop == True:
+            print(input_list[i])
+        elif input_list[i] != 0 and start == True:
+            print(input_list[i])
+        elif input_list[i] == 0 and start == True:
+            end = True
+
+        if end:
+            stop = True
+            start = False
+            begin = False
+            end = False
+        if begin:
+            start = True
+            stop = False
+            begin = False
+            end = False
+        
+        i += 1
+
+func8(
+    [0, 4, 5, 1, 0, 1, 0, 0, 9]
+    )
+    
