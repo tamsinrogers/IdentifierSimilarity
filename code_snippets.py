@@ -132,7 +132,7 @@ print(
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET ?:
+# SNIPPET 5(?): SORT COLUMNS OF 2D ARRAY BY VALUE OF FIRST ROW
 # PHONOLOGICAL
 
 def sort_table(table):
@@ -170,7 +170,7 @@ print(sort_table(table))
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET ?:
+# SNIPPET 6(?): STORE SOME SCORES? IDK
 # PHONOLOGICAL
 
 def store_scores(csv, scores, names=None):
@@ -184,9 +184,11 @@ def store_scores(csv, scores, names=None):
             return None
         store.write(','.join(names))
 
+    # NOT FINISHED
+
 
 # -------------------------------------------------------------------------- #
-# SNIPPET ?:
+# SNIPPET 7(?): CAST CATEGORICAL VARIABLES BETWEEN STRINGS AND INTS
 # PHONOLOGICAL
 
 def cast_cat(map, cats, to='int'):
@@ -217,6 +219,10 @@ cats2 = ['dog', 1, 3, 'bird']
 print(cast_cat(map, cats1, 'str'))
 
 
+# -------------------------------------------------------------------------- #
+# SNIPPET 8(?): RETURN POINTS OF SIN WAVE WITH FREQUENCY NU
+# PHONOLOGICAL
+
 import math
 
 def wave(n_points, wave_nu):
@@ -234,7 +240,10 @@ def wave(n_points, wave_nu):
 print(wave(4, 0.5))
 
 
-# ROW RHO
+# -------------------------------------------------------------------------- #
+# SNIPPET 9(?): RANDOM SPARSE ARRAY OF ONES WITH DENSITY RHO
+# PHONOLOGICAL
+
 import random
 
 def rand_sparse(n, rho):
@@ -256,4 +265,4 @@ mat = rand_sparse(3, 0.5)
 for row in mat:
     print(row)
 
-# question: something like "which of the following are plausible output"
+# question: something like "which of the following is a plausible output"
