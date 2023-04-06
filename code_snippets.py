@@ -5,15 +5,13 @@
 # orthographic, phonological, semantic
 
 
-# FIX TO MAKE WITHOUT BUGS AND PROBABLY SIMPLER FOR MILO
-# adding/rolling dice numbers
-# splitting and appending lists
-# last index in a list
+# funcx_a -> function without identifier similarity
+# funcx_b -> function with identifier similarity
 
 # -------------------------------------------------------------------------- #
 # SNIPPET 1: SENTENCE TO ALL CAPS
 # ORTHOGRAPHIC
-def func1(s):
+def func1_b(s):
     a = ""
     for b in s:
         if b.isalpha():
@@ -28,9 +26,11 @@ def func1(s):
 
     return a
 
+print("func1")
 print(
-    func1("In 2 years, I will get three new pets!")
+    func1_b("in 2 years, i will get three new pets!")
 )
+print("\n\n")
 
 
 
@@ -38,23 +38,26 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 2: SORT EVENS ASCENDING, ODDS DESCENDING
 # ORTHOGRAPHIC
-def func2(lst1):
+def func2_b(lst1):
     # sort the list in ascending order
     lst1 = sorted(lst1, reverse=False)
+    l = len(lst1)
     lst2 = []
     lst3 = []
-    for number in lst1:
-        if number % 2 == 0:
-            lst2.append(number)
+    for i in range(l):
+        if lst1[i] % 2 == 0:
+            lst2.append(lst1[i])
         else:
-            lst3.insert(0, number)
+            lst3.insert(0, lst1[i])
     return lst2, lst3
 
+print("func2")
 print(
-    func2(
+    func2_b(
         [6, 8, 35, 17, 0, 9, 45]
     )
 )
+print("\n\n")
 
 
 
@@ -62,9 +65,10 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 3: SEPARATE VOWEL WORDS
 # ORTHOGRAPHIC
-def func3(string):
+def func3_b(string):
     words1 = ""
     words2 = ""
+    # for each word in the string
     for word in string.split():
         if word[0] in ["a", "e", "i", "o", "u", "y"]:
             words1 = words1 + word + " "
@@ -73,11 +77,13 @@ def func3(string):
 
     return words1, words2
 
+print("func3")
 print(
     str(
-        func3("the inclination angle of some galaxy will affect the component of the")
+        func3_b("the inclination angle of some galaxy will affect the component of the")
     )
 )
+print("\n\n")
 
 
 
@@ -85,7 +91,7 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 4: MOST HOLES IN ONE
 # ORTHOGRAPHIC
-def func4(player_list, scorecard_list):
+def func4_a(player_list, scorecard_list):
     l = len(player_list)
     most_holes = 0
     least_holes = 1e9
@@ -106,9 +112,10 @@ def func4(player_list, scorecard_list):
 
     return most_holes_player, least_holes_player
 
+print("func4")
 print(
     str(
-        func4(
+        func4_a(
             ["Milo", "Ben", "Tamsin"],
             [
                 [1, 2, 4, 3, 1, 1, 3],
@@ -118,6 +125,7 @@ print(
         ) # should print (Ben, Tamsin)
     )
 )
+print("\n\n")
 
 
 
@@ -128,7 +136,7 @@ print(
 # list gets only int
 # array gets only strs
 # if it's a float, add zero to other list
-def func5(input_list, input_array):
+def func5_b(input_list, input_array):
     i = 0
     while i < len(input_list):
         print(i)
@@ -153,12 +161,14 @@ def func5(input_list, input_array):
     
     return input_list, input_array
 
+print("func5")
 print(
     func5(
         [2, "three", "four", 5, 6.7, "seven", "eight", 9, "ten"],
         ["zero", 1, "two", 4.5, 8, 16, "thirty-two", 64.0]
     )
 )
+print("\n\n")
 
 
 
@@ -166,7 +176,7 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 6: SMALL STRING, SHORT STRING
 # SEMANTIC
-def func6(str_list):
+def func6_b(str_list):
     short_string = False
     small_string = False
     for little_string in str_list:
@@ -184,9 +194,11 @@ def func6(str_list):
         short_string = False
         small_string = False
 
+print("func6")
 func6(
     ["treble", "bass", "microphone", "amplifier", "guitar", "glasses", "anyone"]
 )
+print("\n\n")
 
 
 
@@ -195,7 +207,7 @@ func6(
 # SNIPPET 7: CHAR VS LETTER
 # SEMANTIC
 # if a character is in a string, but the full string isn't in the string, print the char
-def func7(input_list, string):
+def func7_b(input_list, string):
     output_list = []
     for char in input_list:
         for letter in char:
@@ -208,12 +220,14 @@ def func7(input_list, string):
                 output_list.append(letter)
     return output_list
 
+print("func7")
 print(
     func7(
         ["string", "forget", "about", "i got strings", "whoz dat"],
         "strings are what i got strings are what i need"
     )
 )
+print("\n\n")
 
 
 
@@ -225,7 +239,7 @@ print(
 # if you begin while started, print
 # if you stop while started, then end
 # if you stop while stopped, print
-def func8(input_list):
+def func8_b(input_list):
     l = len(input_list)
     i = 0
     start = False
@@ -255,7 +269,8 @@ def func8(input_list):
         
         i += 1
 
+print("func8")
 func8(
     [0, 4, 5, 1, 0, 1, 0, 0, 9]
     )
-    
+print("\n\n")
