@@ -133,6 +133,27 @@ print("\n\n")
 # ORTHOGRAPHIC
 def func4_a(player_list, scorecard_list):
     l = len(player_list)
+    maximum = 0
+    minimum = 1e9
+    max_player = ""
+    min_player = ""
+    for i in range(l):
+        k = len(scorecard_list[i])
+        num_hole_in_ones = 0
+        for j in range(k):
+            if scorecard_list[i][j] == 1:
+                num_hole_in_ones += 1
+        if num_hole_in_ones > maximum:
+            max_player = player_list[i]
+            maximum = num_hole_in_ones
+        if num_hole_in_ones < minimum:
+            min_player = player_list[i]
+            minimum = num_hole_in_ones
+
+    return max_player, min_player
+
+def func4_b(player_list, scorecard_list):
+    l = len(player_list)
     most_holes = 0
     least_holes = 1e9
     most_holes_player = ""
