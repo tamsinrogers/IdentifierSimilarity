@@ -53,6 +53,19 @@ print("\n\n")
 # -------------------------------------------------------------------------- #
 # SNIPPET 2: SORT EVENS ASCENDING, ODDS DESCENDING
 # ORTHOGRAPHIC
+def func2_a(input_list):
+    # sort the list in ascending order
+    input_list = sorted(input_list, reverse=False)
+    l = len(input_list)
+    evens = []
+    odds = []
+    for i in range(l):
+        if input_list[i] % 2 == 0:
+            evens.append(input_list[i])
+        else:
+            odds.insert(0, input_list[i])
+    return evens, odds
+
 def func2_b(lst1):
     # sort the list in ascending order
     lst1 = sorted(lst1, reverse=False)
