@@ -263,6 +263,24 @@ print("\n\n")
 # SNIPPET 6: SMALL STRING, SHORT STRING
 # SEMANTIC
 def func6_b(str_list):
+    five_str = False
+    ten_str = False
+    for little_string in str_list:
+        if len(little_string) < 5:
+            five_str = True
+        else:
+            if len(little_string) < 10:
+                ten_str = True
+        if five_str:
+            print(little_string[0])
+        elif ten_str:
+            print(five_str)
+        else:
+            print(little_string[1])
+        five_str = False
+        ten_str = False
+
+def func6_b(str_list):
     short_string = False
     small_string = False
     for little_string in str_list:
