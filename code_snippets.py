@@ -192,7 +192,25 @@ func6(
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 7: SMALL STRING, SHORT STRING
+# SNIPPET 7: NUMBER VS INTEGER
 # SEMANTIC
-def func7():
-    pass
+# if a character is in a string, but the full string isn't in the string, print the char
+def func7(input_list, target):
+    output_list = []
+    for number in input_list:
+        for integer in number:
+            add = False
+            if integer in target:
+                add = True
+            if number in target:
+                add = False
+            if add:
+                output_list.append(integer)
+    return output_list
+
+print(
+    func7(
+        ["string", "forget", "about", "i got strings", "whoz dat"],
+        "strings are what i got strings are what i need"
+    )
+)
