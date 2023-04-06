@@ -197,15 +197,15 @@ func6(
 # if a character is in a string, but the full string isn't in the string, print the char
 def func7(input_list, target):
     output_list = []
-    for number in input_list:
-        for integer in number:
+    for char in input_list:
+        for letter in char:
             add = False
-            if integer in target:
+            if letter in target:
                 add = True
-            if number in target:
+            if char in target:
                 add = False
             if add:
-                output_list.append(integer)
+                output_list.append(letter)
     return output_list
 
 print(
@@ -214,3 +214,10 @@ print(
         "strings are what i got strings are what i need"
     )
 )
+
+
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 7: NUMBER VS INTEGER
+# SEMANTIC
