@@ -313,6 +313,19 @@ print("\n\n")
 # if a character is in a string, but the full string isn't in the string, print the char
 def func7_b(input_list, string):
     output_list = []
+    for substring in input_list:
+        for char in substring:
+            add = False
+            if char in string:
+                add = True
+            if substring in string:
+                add = False
+            if add:
+                output_list.append(char)
+    return output_list
+    
+def func7_b(input_list, string):
+    output_list = []
     for char in input_list:
         for letter in char:
             add = False
