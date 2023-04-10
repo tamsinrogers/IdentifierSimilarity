@@ -20,7 +20,7 @@ def func1_a(input_string):
             ascii_value -= 32
             # convert ascii number to char
             upper_char = chr(ascii_value)
-            return_string += d
+            return_string += upper_char
         else:
             return_string += current_char
 
