@@ -134,6 +134,10 @@ print(
 # -------------------------------------------------------------------------- #
 # SNIPPET 5(?): SORT COLUMNS OF 2D ARRAY BY VALUE OF FIRST ROW
 # PHONOLOGICAL
+#
+# LEVENSHTEIN RATIOS (label, table):
+# ENGLISH:  0.6
+# IPA:      0.85
 
 def sort_table(table):
 
@@ -190,6 +194,9 @@ def store_scores(csv, scores, names=None):
 # -------------------------------------------------------------------------- #
 # SNIPPET 7(?): CAST CATEGORICAL VARIABLES BETWEEN STRINGS AND INTS
 # PHONOLOGICAL
+#
+### THIS ONE IS BAD
+### BOTH RATIOS ARE 0.86
 
 def cast_cat(map, cats, to='int'):
 
@@ -222,6 +229,10 @@ print(cast_cat(map, cats1, 'str'))
 # -------------------------------------------------------------------------- #
 # SNIPPET 8(?): RETURN POINTS OF SIN WAVE WITH FREQUENCY NU
 # PHONOLOGICAL
+#
+# LEVENSHTEIN RATIOS (new, nu):
+# ENGLISH:  0.4
+# IPA:      1.0
 
 import math
 
@@ -243,6 +254,10 @@ print(wave(4, 0.5))
 # -------------------------------------------------------------------------- #
 # SNIPPET 9(?): RANDOM SPARSE ARRAY OF ONES WITH DENSITY RHO
 # PHONOLOGICAL
+#
+# LEVENSHTEIN RATIOS (row, rho):
+# ENGLISH:  0.67
+# IPA:      1.0
 
 import random
 
@@ -266,3 +281,41 @@ for row in mat:
     print(row)
 
 # question: something like "which of the following is a plausible output"
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 10(?): 1D convolution
+# PHONOLOGICAL
+#
+# LEVENSHTEIN RATIOS (cur, ker):
+# ENGLISH:  0.33    <<==  PERMISSIBLE BY 0.35 THRESHOLD
+# IPA:      1.0
+
+
+def convolve(data, ker, pad=False):
+
+    if len(ker) % 2 == 0:
+        print('Kernel must have odd length!')
+        return None
+
+    ker_pad = int((len(ker) - 1)/2)
+
+    if pad:
+        for _ in range(ker_pad):
+            data.insert(0, 0)
+            data.append(0)
+
+    n_points = len(data)
+    output = []
+    for i in range(ker_pad, n_points - ker_pad):
+        cur = data[i - ker_pad: i + ker_pad + 1]
+        value = 0
+        for j in range(len(ker)):
+            value += ker[j]*cur[j]
+        output.append(value)
+    return output
+
+data = [0, 1, 2, 3, 2, 1, 0]
+ker = [1, 1, 1]
+
+print(convolve(data, ker))
+print(convolve(data, ker, pad=True))
