@@ -11,35 +11,35 @@
 # -------------------------------------------------------------------------- #
 # SNIPPET 1: SENTENCE TO ALL CAPS
 # ORTHOGRAPHIC
-def func1_a(input_string):
-    return_string = ""
-    for current_char in input_string:
-        if current_char.isalpha():
-            # get ascii value of b
-            ascii_value = ord(current_char)
-            ascii_value -= 32
-            # convert ascii number to char
-            upper_char = chr(ascii_value)
-            return_string += upper_char
-        else:
-            return_string += current_char
-
-    return return_string
-
-def func1_b(s):
+def func1_a(t):
     a = ""
-    for b in s:
-        if b.isalpha():
+    for u in t:
+        if u.isalpha():
             # get ascii value of b
-            c = ord(b)
-            c -= 32
+            x = ord(u)
+            x -= 32
             # convert ascii number to char
-            d = chr(c)
-            a += d
+            z = chr(x)
+            a += z
         else:
-            a += b
+            a += u
 
     return a
+
+def func1_b(p):
+    q = ""
+    for b in p:
+        if b.isalpha():
+            # get ascii value of b
+            g = ord(b)
+            g -= 32
+            # convert ascii number to char
+            d = chr(g)
+            q += d
+        else:
+            q += b
+
+    return q
 
 print("func1")
 print(
