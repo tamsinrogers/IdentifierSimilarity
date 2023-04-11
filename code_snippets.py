@@ -249,7 +249,7 @@ def func5_b(input_list, input_array):
 
 print("func5")
 print(
-    func5(
+    func5_a(
         [2, "three", "four", 5, 6.7, "seven", "eight", 9, "ten"],
         ["zero", 1, "two", 4.5, 8, 16, "thirty-two", 64.0]
     )
@@ -299,7 +299,7 @@ def func6_b(str_list):
         small_string = False
 
 print("func6")
-func6(
+func6_a(
     ["treble", "bass", "microphone", "amplifier", "guitar", "glasses", "anyone"]
 )
 print("\n\n")
@@ -339,7 +339,7 @@ def func7_b(input_list, string):
 
 print("func7")
 print(
-    func7(
+    func7_a(
         ["string", "forget", "about", "i got strings", "whoz dat"],
         "strings are what i got strings are what i need"
     )
@@ -417,7 +417,7 @@ def func8_b(input_list):
         i += 1
 
 print("func8")
-func8(
+func8_a(
     [0, 4, 5, 1, 0, 1, 0, 0, 9]
     )
 print("\n\n")
