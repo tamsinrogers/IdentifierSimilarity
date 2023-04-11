@@ -174,59 +174,6 @@ print(sort_table(table))
 
 
 # -------------------------------------------------------------------------- #
-# SNIPPET 6(?): STORE SOME SCORES? IDK
-# PHONOLOGICAL
-
-def store_scores(csv, scores, names=None):
-
-    try:
-        store = open(csv, 'r')
-    except FileNotFoundError:
-        store = open(csv, 'w')
-        if names is None:
-            print('Error: path to file with headers OR list of name required')
-            return None
-        store.write(','.join(names))
-
-    # NOT FINISHED
-
-
-# -------------------------------------------------------------------------- #
-# SNIPPET 7(?): CAST CATEGORICAL VARIABLES BETWEEN STRINGS AND INTS
-# PHONOLOGICAL
-#
-### THIS ONE IS BAD
-### BOTH RATIOS ARE 0.86
-
-def cast_cat(map, cats, to='int'):
-
-    inv_map = {val: key for key, val in map.items()}
-
-    cast_vals = []
-
-    for cat in cats:
-
-        if to == 'int':
-            if type(cat) is int:
-                cast_vals.append(cat)
-            elif type(cat) is str:
-                cast_vals.append(map[cat])
-
-        elif to == 'str':
-            if type(cat) is str:
-                cast_vals.append(cat)
-            elif type(cat) is int:
-                cast_vals.append(inv_map[cat])
-
-    return cast_vals
-
-map = {'dog': 1, 'cat': 2, 'lizard': 3, 'bird': 4}
-cats1 = [1, 3, 2, 1, 4]
-cats2 = ['dog', 1, 3, 'bird']
-print(cast_cat(map, cats1, 'str'))
-
-
-# -------------------------------------------------------------------------- #
 # SNIPPET 8(?): RETURN POINTS OF SIN WAVE WITH FREQUENCY NU
 # PHONOLOGICAL
 #
@@ -263,14 +210,14 @@ import random
 
 def rand_sparse(n, rho):
     mat = []
-    for row in range(n):
-        new_row = []
-        for col in range(n):
+    for _ in range(n):
+        row = []
+        for _ in range(n):
             if random.random() < rho:
-                new_row.append(1)
+                row.append(1)
             else:
-                new_row.append(0)
-        mat.append(new_row)
+                row.append(0)
+        mat.append(row)
 
     return mat
 
@@ -287,7 +234,7 @@ for row in mat:
 # PHONOLOGICAL
 #
 # LEVENSHTEIN RATIOS (cur, ker):
-# ENGLISH:  0.33    <<==  PERMISSIBLE BY 0.35 THRESHOLD
+# ENGLISH:  0.33
 # IPA:      1.0
 
 
@@ -307,15 +254,47 @@ def convolve(data, ker, pad=False):
     n_points = len(data)
     output = []
     for i in range(ker_pad, n_points - ker_pad):
+    
         cur = data[i - ker_pad: i + ker_pad + 1]
         value = 0
         for j in range(len(ker)):
             value += ker[j]*cur[j]
+        
         output.append(value)
+    
     return output
+
 
 data = [0, 1, 2, 3, 2, 1, 0]
 ker = [1, 1, 1]
 
 print(convolve(data, ker))
 print(convolve(data, ker, pad=True))
+
+
+# -------------------------------------------------------------------------- #
+# SNIPPET 11(?): error of approximation function/values
+# PHONOLOGICAL
+#
+# LEVENSHTEIN RATIOS (err, pair):
+# ENGLISH:  0.29
+# IPA:      0.8
+
+def approximation_error(points, func):
+
+    err = 0
+    for pair in points:
+
+        y_approx = func(pair[0])
+        err += (pair[1] - y_approx)**2
+
+    return err/len(points)
+
+
+points = [(0, 0), (1, 1/2), (3, 4.5)]
+
+
+def f(x): return 0.5*x**2
+
+
+print(approximation_error(points, f))
