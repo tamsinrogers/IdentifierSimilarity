@@ -197,30 +197,30 @@ print("\n\n")
 # list gets only int
 # array gets only strs
 # if it's a float, add zero to other list
-def func5_a(ints, strs):
+def func5_a(a, b):
     i = 0
-    while i < len(ints):
+    while i < len(a):
         print(i)
-        if type(ints[i]) == str:
-            strs.append(ints[i])
-            ints.remove(ints[i])
-        elif type(ints[i]) == float:
-            strs.append("0")
-            ints.remove(ints[i])
+        if type(a[i]) == str:
+            b.append(a[i])
+            a.remove(a[i])
+        elif type(a[i]) == float:
+            b.append("0")
+            a.remove(a[i])
         else:
             i += 1
     j = 0
-    while j < len(strs):
-        if type(strs[j]) == int:
-            ints.append(strs[j])
-            strs.remove(strs[j])
-        elif type(strs[j]) == float:
-            ints.append(0)
-            strs.remove(strs[j])
+    while j < len(b):
+        if type(b[j]) == int:
+            a.append(b[j])
+            b.remove(b[j])
+        elif type(b[j]) == float:
+            a.append(0)
+            b.remove(b[j])
         else:
             j += 1
     
-    return ints, strs
+    return a, b
 
 def func5_b(input_list, input_array):
     i = 0
