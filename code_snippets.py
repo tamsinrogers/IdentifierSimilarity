@@ -131,26 +131,26 @@ print("\n\n")
 # -------------------------------------------------------------------------- #
 # SNIPPET 4: MOST HOLES IN ONE
 # ORTHOGRAPHIC
-def func4_a(a, z):
+def func4_a(a, b):
     l = len(a)
-    t = 0
-    x = 1e9
-    z = ""
-    f = ""
+    u = 0
+    m = 1e9
+    c = ""
+    x = ""
     for i in range(l):
-        k = len(z[i])
-        o = 0
+        k = len(b[i])
+        r = 0
         for j in range(k):
-            if z[i][j] == 1:
-                o += 1
-        if o > t:
-            z = a[i]
-            t = o
-        if o < x:
-            f = a[i]
-            x = o
+            if b[i][j] == 1:
+                r += 1
+        if r > u:
+            c = a[i]
+            u = r
+        if r < m:
+            x = a[i]
+            m = r
 
-    return z, f
+    return c, x
 
 def func4_b(player_list, scorecard_list):
     l = len(player_list)
