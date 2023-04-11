@@ -93,17 +93,17 @@ print("\n\n")
 # -------------------------------------------------------------------------- #
 # SNIPPET 3: SEPARATE VOWEL WORDS
 # ORTHOGRAPHIC
-def func3_a(input_string):
-    vowel_words = ""
-    cons_words = ""
+def func3_a(t):
+    x = ""
+    u = ""
     # for each word in the string
-    for word in input_string.split():
-        if word[0] in ["a", "e", "i", "o", "u", "y"]:
-            vowel_words = vowel_words + word + " "
+    for z in t.split():
+        if z[0] in ["a", "e", "i", "o", "u", "y"]:
+            x = x + z + " "
         else:
-            cons_words = cons_words + word + " "
+            u = u + z + " "
 
-    return vowel_words, cons_words
+    return x, u
 
 def func3_b(string):
     words1 = ""
