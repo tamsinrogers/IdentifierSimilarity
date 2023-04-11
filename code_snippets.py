@@ -311,16 +311,16 @@ print("\n\n")
 # SNIPPET 7: CHAR VS LETTER
 # SEMANTIC
 # if a character is in a string, but the full string isn't in the string, print the char
-def func7_a(input_list, string):
+def func7_a(a, b):
     output_list = []
-    for substring in input_list:
-        for char in substring:
-            add = False
-            if char in string:
-                add = True
-            if substring in string:
-                add = False
-            if add:
+    for substring in a:
+        for char in c:
+            x = False
+            if char in b:
+                x = True
+            if c in b:
+                x = False
+            if x:
                 output_list.append(char)
     return output_list
     
