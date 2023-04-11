@@ -356,33 +356,33 @@ print("\n\n")
 # if you begin while started, print
 # if you stop while started, then end
 # if you stop while stopped, print
-def func8_a(input_list):
-    l = len(input_list)
+def func8_a(a):
+    l = len(a)
     i = 0
-    is_started = False
-    begin = False
-    is_stopped = True
-    end = False
+    b = False
+    c = False
+    x = True
+    y = False
     while i < l:
-        if input_list[i] != 0 and is_stopped == True:
-            begin = True
-        elif input_list[i] == 0 and is_stopped == True:
-            print(input_list[i])
-        elif input_list[i] != 0 and is_started == True:
-            print(input_list[i])
-        elif input_list[i] == 0 and is_started == True:
-            end = True
+        if a[i] != 0 and x == True:
+            c = True
+        elif a[i] == 0 and x == True:
+            print(a[i])
+        elif a[i] != 0 and b == True:
+            print(a[i])
+        elif a[i] == 0 and b == True:
+            y = True
 
-        if end:
-            is_stopped = True
-            is_started = False
-            begin = False
-            end = False
-        if begin:
-            is_started = True
-            is_stopped = False
-            begin = False
-            end = False
+        if y:
+            x = True
+            b = False
+            c = False
+            y = False
+        if c:
+            b = True
+            x = False
+            c = False
+            y = False
         
         i += 1
 
