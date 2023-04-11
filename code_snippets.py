@@ -131,26 +131,26 @@ print("\n\n")
 # -------------------------------------------------------------------------- #
 # SNIPPET 4: MOST HOLES IN ONE
 # ORTHOGRAPHIC
-def func4_a(player_list, scorecard_list):
-    l = len(player_list)
-    maximum = 0
-    minimum = 1e9
-    max_player = ""
-    min_player = ""
+def func4_a(a, z):
+    l = len(a)
+    t = 0
+    x = 1e9
+    z = ""
+    f = ""
     for i in range(l):
-        k = len(scorecard_list[i])
-        num_hole_in_ones = 0
+        k = len(z[i])
+        o = 0
         for j in range(k):
-            if scorecard_list[i][j] == 1:
-                num_hole_in_ones += 1
-        if num_hole_in_ones > maximum:
-            max_player = player_list[i]
-            maximum = num_hole_in_ones
-        if num_hole_in_ones < minimum:
-            min_player = player_list[i]
-            minimum = num_hole_in_ones
+            if z[i][j] == 1:
+                o += 1
+        if o > t:
+            z = a[i]
+            t = o
+        if o < x:
+            f = a[i]
+            x = o
 
-    return max_player, min_player
+    return z, f
 
 def func4_b(player_list, scorecard_list):
     l = len(player_list)
