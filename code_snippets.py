@@ -312,17 +312,17 @@ print("\n\n")
 # SEMANTIC
 # if a character is in a string, but the full string isn't in the string, print the char
 def func7_a(a, b):
-    output_list = []
-    for substring in a:
-        for char in c:
-            x = False
-            if char in b:
-                x = True
-            if c in b:
-                x = False
-            if x:
-                output_list.append(char)
-    return output_list
+    c = []
+    for x in a:
+        for y in x:
+            t = False
+            if y in b:
+                t = True
+            if x in b:
+                t = False
+            if t:
+                c.append(y)
+    return c
     
 def func7_b(input_list, string):
     output_list = []
