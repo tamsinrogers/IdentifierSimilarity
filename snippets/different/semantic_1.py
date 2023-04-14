@@ -20,5 +20,5 @@ def function(a, b):
             b.remove(b[j])
         else:
             j += 1
-    
+
     return a, b

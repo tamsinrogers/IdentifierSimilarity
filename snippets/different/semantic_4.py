@@ -6,13 +6,13 @@ def function(a):
     x = True
     y = False
     while i < l:
-        if a[i] != 0 and x == True:
+        if a[i] != 0 and x is True:
             c = True
-        elif a[i] == 0 and x == True:
+        elif a[i] == 0 and x is True:
             print(a[i])
-        elif a[i] != 0 and b == True:
+        elif a[i] != 0 and b is True:
             print(a[i])
-        elif a[i] == 0 and b == True:
+        elif a[i] == 0 and b is True:
             y = True
 
         if y:
