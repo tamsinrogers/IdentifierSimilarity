@@ -1,18 +1,18 @@
-def function(input_list):
-    l = len(input_list)
-    i = 0
+def function(input):
+    l = len(input)
+    index = 0
     start = False
     begin = False
     stop = True
     end = False
-    while i < l:
-        if input_list[i] != 0 and stop == True:
+    while index < l:
+        if input[index] != 0 and stop == True:
             begin = True
-        elif input_list[i] == 0 and stop == True:
-            print(input_list[i])
-        elif input_list[i] != 0 and start == True:
-            print(input_list[i])
-        elif input_list[i] == 0 and start == True:
+        elif input[index] == 0 and stop == True:
+            print(input[index])
+        elif input[index] != 0 and start == True:
+            print(input[index])
+        elif input[index] == 0 and start == True:
             end = True
 
         if end:
@@ -26,4 +26,4 @@ def function(input_list):
             begin = False
             end = False
 
-        i += 1
+        index += 1
