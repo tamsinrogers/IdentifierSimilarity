@@ -20,5 +20,5 @@ def function(input_list, input_array):
             input_array.remove(input_array[j])
         else:
             j += 1
-    
+
     return input_list, input_array

@@ -25,5 +25,5 @@ def function(input_list):
             stop = False
             begin = False
             end = False
-        
+
         i += 1
