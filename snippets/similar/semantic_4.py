@@ -6,13 +6,13 @@ def function(input_list):
     stop = True
     end = False
     while i < l:
-        if input_list[i] != 0 and stop is True:
+        if input_list[i] != 0 and stop == True:
             begin = True
-        elif input_list[i] == 0 and stop is True:
+        elif input_list[i] == 0 and stop == True:
             print(input_list[i])
-        elif input_list[i] != 0 and start is True:
+        elif input_list[i] != 0 and start == True:
             print(input_list[i])
-        elif input_list[i] == 0 and start is True:
+        elif input_list[i] == 0 and start == True:
             end = True
 
         if end:

@@ -96,7 +96,6 @@ print("\n\n")
 def func3_a(t):
     x = ""
     u = ""
-    # for each word in the string
     for z in t.split():
         if z[0] in ["a", "e", "i", "o", "u", "y"]:
             x = x + z + " "
@@ -108,7 +107,6 @@ def func3_a(t):
 def func3_b(string):
     words1 = ""
     words2 = ""
-    # for each word in the string
     for word in string.split():
         if word[0] in ["a", "e", "i", "o", "u", "y"]:
             words1 = words1 + word + " "
