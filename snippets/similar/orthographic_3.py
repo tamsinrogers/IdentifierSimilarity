@@ -1,10 +1,10 @@
-def function(string):
-    words1 = ""
-    words2 = ""
-    for word in string.split():
-        if word[0] in ["a", "e", "i", "o", "u", "y"]:
-            words1 = words1 + word + " "
+def function(m):
+    u = ""
+    n = ""
+    for v in m.split():
+        if v[0] in ["a", "e", "i", "o", "u", "y"]:
+            u = u + v + " "
         else:
-            words2 = words2 + word + " "
+            n = n + v + " "
 
-    return words1, words2
+    return u, n
