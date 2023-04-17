@@ -1,17 +1,17 @@
 def function(a):
-    b = False
-    c = False
-    for x in a:
-        if len(x) < 5:
-            b = True
+    var = False
+    boolean = False
+    for element in a:
+        if len(element) < 5:
+            var = True
         else:
-            if len(x) < 10:
-                c = True
-        if b:
-            print(x[0])
-        elif c:
-            print(b)
+            if len(element) < 10:
+                boolean = True
+        if var:
+            print(element[0])
+        elif boolean:
+            print(var)
         else:
-            print(x[1])
-        b = False
-        c = False
+            print(element[1])
+        var = False
+        boolean = False
