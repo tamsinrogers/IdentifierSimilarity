@@ -19,8 +19,8 @@ def function(input, ker, pad=False):
 
         cur = data[i - ker_pad: i + ker_pad + 1]
         value = 0
-        for j in range(len(ker)):
-            value += ker[j]*cur[j]
+        for index in range(len(ker)):
+            value += ker[index]*cur[index]
 
         output.append(value)
 
