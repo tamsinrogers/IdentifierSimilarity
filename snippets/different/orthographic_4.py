@@ -1,20 +1,20 @@
-def function(a, b):
-    l = len(a)
-    u = 0
-    m = 1e9
-    c = ""
-    x = ""
-    for i in range(l):
-        k = len(b[i])
+def function(a, input):
+    length = len(a)
+    num = 0
+    integer = 1e9
+    var = ""
+    ret = ""
+    for i in range(length):
+        y = len(input[i])
         r = 0
-        for j in range(k):
-            if b[i][j] == 1:
+        for index in range(y):
+            if input[i][index] == 1:
                 r += 1
-        if r > u:
-            c = a[i]
-            u = r
-        if r < m:
-            x = a[i]
-            m = r
+        if r > num:
+            var = a[i]
+            num = r
+        if r < integer:
+            ret = a[i]
+            integer = r
 
-    return c, x
+    return var, ret

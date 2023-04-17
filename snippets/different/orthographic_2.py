@@ -1,12 +1,12 @@
-def function(a):
+def function(input):
     # sort the list in ascending order
-    a = sorted(a, reverse=False)
-    l = len(a)
-    u = []
+    input = sorted(input, reverse=False)
+    length = len(input)
+    lst = []
     t = []
-    for i in range(l):
-        if a[i] % 2 == 0:
-            u.append(a[i])
+    for index in range(length):
+        if input[index] % 2 == 0:
+            lst.append(input[index])
         else:
-            t.insert(0, a[i])
-    return u, t
+            t.insert(0, input[index])
+    return lst, t
