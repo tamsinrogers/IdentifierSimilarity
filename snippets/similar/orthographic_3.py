@@ -1,10 +1,11 @@
-def function(m):
-    u = ""
+def function(input):
     n = ""
-    for v in m.split():
-        if v[0] in ["a", "e", "i", "o", "u", "y"]:
-            u = u + v + " "
+    u = ""
+    # for each word in the string
+    for elem in input.split():
+        if elem[0] in ["a", "e", "i", "o", "u", "y"]:
+            n = n + elem + " "
         else:
-            n = n + v + " "
+            u = u + elem + " "
 
-    return u, n
+    return n, u

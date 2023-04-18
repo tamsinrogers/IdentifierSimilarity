@@ -1,14 +1,14 @@
-def function(p):
-    q = ""
-    for b in p:
+def function(input):
+    string = ""
+    for b in input:
         if b.isalpha():
             # get ascii value of b
-            g = ord(b)
-            g -= 32
+            x = ord(b)
+            x -= 32
             # convert ascii number to char
-            d = chr(g)
-            q += d
+            d = chr(x)
+            string += d
         else:
-            q += b
+            string += b
 
-    return q
+    return string
