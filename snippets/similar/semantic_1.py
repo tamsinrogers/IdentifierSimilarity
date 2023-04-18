@@ -1,24 +1,24 @@
-def function(input_list, input_array):
-    i = 0
-    while i < len(input_list):
-        print(i)
-        if type(input_list[i]) == str:
-            input_array.append(input_list[i])
-            input_list.remove(input_list[i])
-        elif type(input_list[i]) == float:
-            input_array.append("0")
-            input_list.remove(input_list[i])
+def function(list, array):
+    index = 0
+    while index < len(list):
+        print(index)
+        if type(list[index]) == str:
+            array.append(list[index])
+            list.remove(list[index])
+        elif type(list[index]) == float:
+            array.append("0")
+            list.remove(list[index])
         else:
-            i += 1
-    j = 0
-    while j < len(input_array):
-        if type(input_array[j]) == int:
-            input_list.append(input_array[j])
-            input_array.remove(input_array[j])
-        elif type(input_array[j]) == float:
-            input_list.append(0)
-            input_array.remove(input_array[j])
+            index += 1
+    index = 0
+    while index < len(array):
+        if type(array[index]) == int:
+            list.append(array[index])
+            array.remove(array[index])
+        elif type(array[index]) == float:
+            list.append(0)
+            array.remove(array[index])
         else:
-            j += 1
+            index += 1
 
-    return input_list, input_array
+    return list, array

@@ -1,12 +1,12 @@
-def function(lst1):
+def function(o):
     # sort the list in ascending order
-    lst1 = sorted(lst1, reverse=False)
-    l = len(lst1)
-    lst2 = []
-    lst3 = []
-    for i in range(l):
-        if lst1[i] % 2 == 0:
-            lst2.append(lst1[i])
+    o = sorted(o, reverse=False)
+    l = len(o)
+    i = []
+    j = []
+    for c in range(l):
+        if o[c] % 2 == 0:
+            i.append(o[c])
         else:
-            lst3.insert(0, lst1[i])
-    return lst2, lst3
+            j.insert(0, o[c])
+    return i, j

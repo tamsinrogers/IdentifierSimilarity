@@ -1,7 +1,7 @@
-def function(str_list):
+def function(a):
     short_string = False
     small_string = False
-    for little_string in str_list:
+    for little_string in a:
         if len(little_string) < 5:
             short_string = True
         else:

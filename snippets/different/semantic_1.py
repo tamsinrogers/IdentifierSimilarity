@@ -1,24 +1,24 @@
-def function(a, b):
-    i = 0
-    while i < len(a):
-        print(i)
-        if type(a[i]) == str:
-            b.append(a[i])
-            a.remove(a[i])
-        elif type(a[i]) == float:
-            b.append("0")
-            a.remove(a[i])
+def function(a, input):
+    index = 0
+    while index < len(a):
+        print(index)
+        if type(a[index]) == str:
+            input.append(a[index])
+            a.remove(a[index])
+        elif type(a[index]) == float:
+            input.append("0")
+            a.remove(a[index])
         else:
-            i += 1
-    j = 0
-    while j < len(b):
-        if type(b[j]) == int:
-            a.append(b[j])
-            b.remove(b[j])
-        elif type(b[j]) == float:
+            index += 1
+    index = 0
+    while index < len(input):
+        if type(input[index]) == int:
+            a.append(input[index])
+            input.remove(input[index])
+        elif type(input[index]) == float:
             a.append(0)
-            b.remove(b[j])
+            input.remove(input[index])
         else:
-            j += 1
+            index += 1
 
-    return a, b
+    return a, input
