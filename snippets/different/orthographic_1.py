@@ -12,3 +12,5 @@ def function(input):
             string += u
 
     return string
+
+input = "in 2 years, i will get three new pets!"

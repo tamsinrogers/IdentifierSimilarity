@@ -10,3 +10,6 @@ def function(a, param):
             if boolean == True:
                 lst.append(y)
     return lst
+
+a = ["string", "forget", "about", "i got strings", "who is that"]
+param = "strings are what i got strings are what i need"

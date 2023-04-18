@@ -22,3 +22,6 @@ def function(a, input):
             index += 1
 
     return a, input
+
+a = [2, "three", "four", 5, 6.7, "seven", "eight", 9, "ten"]
+input = ["zero", 1, "two", 4.5, 8, 16, "thirty-two", 64.0]

@@ -33,44 +33,48 @@ from different.phonological_4 import function as phono_4_dif
 
 
 def test_ortho_1():
-    test_str = 'this is a test'
+    test_str = "in 2 years, i will get three new pets!"
 
     dif_output = ortho_1_dif(test_str)
     sim_output = ortho_1_sim(test_str)
 
     assert dif_output == sim_output
-    assert dif_output == 'THIS IS A TEST'
+    assert dif_output == 'IN 2 YEARS, I WILL GET THREE NEW PETS!'
 
 
 def test_ortho_2():
-    test_list = [0, 1, 2, 3, 4, 5]
+    test_list = [6, 8, 35, 17, 0, 9, 45]
 
     dif_output = ortho_2_dif(test_list)
     sim_output = ortho_2_sim(test_list)
 
     assert dif_output == sim_output
-    assert dif_output == ([0, 2, 4], [5, 3, 1])
+    assert dif_output == ([0, 6, 8], [45, 35, 17, 9])
 
 
 def test_ortho_3():
-    test_str = 'remove all the words starting with vowels!'
+    test_str = "the inclination angle of some galaxy will affect the component of the"
 
     dif_output = ortho_3_dif(test_str)
     sim_output = ortho_3_sim(test_str)
 
     assert dif_output == sim_output
-    assert dif_output == ('all ', 'remove the words starting with vowels! ')
+    assert dif_output == ('inclination angle of affect of ', 'the some galaxy will the component the ')
 
 
 def test_ortho_4():
-    test_players = ['Alex', 'Bella']
-    test_scores = [[2, 2], [1, 1]]
+    test_players = ["Jerry", "George", "Newman"]
+    test_scores = [
+                [1, 2, 4, 3, 1, 1, 3],
+                [4, 2, 1, 1, 1, 3, 1],
+                [6, 2, 1, 3, 4, 3, 2]
+            ]
 
     dif_output = ortho_4_dif(test_players, test_scores)
     sim_output = ortho_4_sim(test_players, test_scores)
 
     assert dif_output == sim_output
-    assert dif_output == ('Bella', 'Alex')
+    assert dif_output == ('George', 'Newman')
 
 
 def test_phono_1():
@@ -157,6 +161,16 @@ def test_semantic_1():
 
 def test_semantic_2():
     # function doesn't return anything
+    # printed output:
+
+    # False
+    # b
+    # i
+    # False
+    # False
+    # False
+    # False
+
     pass
 
 
@@ -175,4 +189,11 @@ def test_semantic_3():
 
 def test_semantic_4():
     # function doesn't return anything
+
+    # printed output:
+    # 0
+    # 5
+    # 1
+    # 0
+
     pass
