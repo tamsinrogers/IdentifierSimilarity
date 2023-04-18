@@ -127,19 +127,11 @@ def test_phono_3():
 
 def test_phono_4():
 
-    test_y = [0, 1, 2, 3, 4]
+    mat_sim = phono_4_sim(2, 2)
+    mat_dif = phono_4_dif(2, 2)
 
-    min_sim, max_sim = phono_4_sim(test_y)
-    min_idx_sim, max_idx_sim = phono_4_sim(test_y, True)
-
-    min_dif, max_dif = phono_4_dif(test_y)
-    min_idx_dif, max_idx_dif = phono_4_dif(test_y, True)
-
-    assert min_sim == 0 and max_sim == 4
-    assert min_idx_sim == 0 and max_idx_sim == 4
-
-    assert min_dif == 0 and max_dif == 4
-    assert min_idx_dif == 0 and max_idx_dif == 4
+    assert mat_sim == mat_dif
+    assert mat_dif == [[2, 0], [0, 2]]
 
 
 def test_semantic_1():
