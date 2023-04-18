@@ -24,5 +24,7 @@ def function(list, array):
     return list, array
 
 
-a = [2, "three", "four", 5, 6.7, "seven", "eight", 9, "ten"]
-input = ["zero", 1, "two", 4.5, 8, 16, "thirty-two", 64.0]
+a = [2, "three", "four", 5, 6.7,
+     "seven", "eight", 9, "ten"]
+input = ["zero", 1, "two", 4.5,
+         8, 16, "thirty-two", 64.0]
