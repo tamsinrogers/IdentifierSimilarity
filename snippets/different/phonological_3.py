@@ -19,4 +19,4 @@ def function(n, den):
 
 
 n = 3
-rho = 0.5
+den = 0.5
