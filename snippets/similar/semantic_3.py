@@ -7,6 +7,11 @@ def function(param, string):
                 add = True
             if character in string:
                 add = False
-            if add == True:
+            if add is True:
                 lst.append(letter)
     return lst
+
+
+a = ["string", "forget", "about",
+     "i got strings", "who is that"]
+param = "strings are what i got strings are what i need"

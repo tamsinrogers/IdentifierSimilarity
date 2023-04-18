@@ -10,4 +10,5 @@ def function(input):
 
     return x, u
 
+
 input = "the inclination angle of some galaxy will affect the component of the"

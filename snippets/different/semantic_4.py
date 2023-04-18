@@ -28,4 +28,5 @@ def function(input):
 
         index += 1
 
+
 input = [0, 4, 5, 1, 0, 1, 0, 0, 9]

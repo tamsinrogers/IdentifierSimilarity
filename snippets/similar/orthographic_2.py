@@ -11,3 +11,5 @@ def function(input):
             d.insert(0, input[index])
     return q, d
 
+
+input = [6, 8, 35, 17, 0, 9, 45]

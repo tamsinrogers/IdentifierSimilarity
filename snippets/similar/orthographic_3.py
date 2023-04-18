@@ -9,3 +9,6 @@ def function(input):
             u = u + elem + " "
 
     return n, u
+
+
+input = "the inclination angle of some galaxy will affect the component of the"

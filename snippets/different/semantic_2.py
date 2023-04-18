@@ -16,4 +16,6 @@ def function(a):
         var = False
         boolean = False
 
-a = ["treble", "bass", "microphone", "amplifier", "guitar", "glasses", "anyone"]
+
+a = ["treble", "bass", "microphone",
+     "amplifier", "guitar", "glasses", "anyone"]

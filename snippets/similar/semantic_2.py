@@ -15,3 +15,7 @@ def function(a):
             print(little_string[1])
         short_string = False
         boolean = False
+
+
+a = ["treble", "bass", "microphone",
+     "amplifier", "guitar", "glasses", "anyone"]

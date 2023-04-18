@@ -19,6 +19,7 @@ def function(a, input):
 
     return var, ret
 
+
 a = ["Jerry", "George", "Newman"]
 b = [
     [1, 2, 4, 3, 1, 1, 3],

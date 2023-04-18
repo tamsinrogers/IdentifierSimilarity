@@ -7,9 +7,11 @@ def function(a, param):
                 boolean = True
             if element in param:
                 boolean = False
-            if boolean == True:
+            if boolean is True:
                 lst.append(y)
     return lst
 
-a = ["string", "forget", "about", "i got strings", "who is that"]
+
+a = ["string", "forget", "about",
+     "i got strings", "who is that"]
 param = "strings are what i got strings are what i need"
