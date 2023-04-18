@@ -3,27 +3,27 @@ def function(input):
     index = 0
     start = False
     begin = False
-    stop = True
-    end = False
+    x = True
+    y = False
     while index < l:
-        if input[index] != 0 and stop == True:
+        if input[index] != 0 and x is True:
             begin = True
-        elif input[index] == 0 and stop == True:
+        elif input[index] == 0 and x is True:
             print(input[index])
-        elif input[index] != 0 and start == True:
+        elif input[index] != 0 and start is True:
             print(input[index])
-        elif input[index] == 0 and start == True:
-            end = True
+        elif input[index] == 0 and start is True:
+            y = True
 
-        if end:
-            stop = True
+        if y:
+            x = True
             start = False
             begin = False
-            end = False
+            y = False
         if begin:
             start = True
-            stop = False
+            x = False
             begin = False
-            end = False
+            y = False
 
         index += 1
