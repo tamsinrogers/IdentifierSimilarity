@@ -17,11 +17,15 @@ def function(input, ker, pad=False):
     output = []
     for i in range(ker_pad, n_points - ker_pad):
 
-        sub = data[i - ker_pad: i + ker_pad + 1]
+        win = data[i - ker_pad: i + ker_pad + 1]
         value = 0
         for index in range(len(ker)):
-            value += ker[index]*sub[index]
+            value += ker[index]*win[index]
 
         output.append(value)
 
     return output
+
+
+input = [0, 1, 2, 3, 2, 1, 0]
+ker = [1, 1, 1]

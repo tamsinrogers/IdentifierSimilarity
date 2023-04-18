@@ -25,3 +25,7 @@ def function(input, ker, pad=False):
         output.append(value)
 
     return output
+
+
+input = [0, 1, 2, 3, 2, 1, 0]
+ker = [1, 1, 1]

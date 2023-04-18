@@ -16,3 +16,7 @@ def function(n, den):
         mat.append(row)
 
     return mat
+
+
+n = 3
+den = 0.5

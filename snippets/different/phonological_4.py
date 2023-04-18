@@ -1,18 +1,20 @@
-def function(x, index=False):
+def function(num, s=1):
 
-    var = num = integer = 0
-    min_x = 1e9
+    eye = []
 
-    for i in range(len(x)):
-        if x[i] < min_x:
-            min_x = x[i]
-            integer = i
+    for r in range(num):
+        row = []
 
-        elif x[i] > var:
-            var = x[i]
-            num = i
+        for i in range(num):
+            if i == r:
+                row.append(s)
+            else:
+                row.append(0)
 
-    if index:
-        return (integer, num)
-    else:
-        return (min_x, var)
+        eye.append(row)
+
+    return eye
+
+
+num = 3
+s = 2
