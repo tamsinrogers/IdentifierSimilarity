@@ -1,12 +1,13 @@
-def function(o):
+def function(input):
     # sort the list in ascending order
-    o = sorted(o, reverse=False)
-    l = len(o)
-    i = []
-    j = []
-    for c in range(l):
-        if o[c] % 2 == 0:
-            i.append(o[c])
+    input = sorted(input, reverse=False)
+    length = len(input)
+    q = []
+    d = []
+    for index in range(length):
+        if input[index] % 2 == 0:
+            q.append(input[index])
         else:
-            j.insert(0, o[c])
-    return i, j
+            d.insert(0, input[index])
+    return q, d
+

@@ -1,0 +1,262 @@
+make orthdiff
+python3 namesake.py ../IdentifierSimilarity/snippets/different/orthographic_1.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 17 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/orthographic_2.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 22 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/orthographic_3.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 14 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/orthographic_4.py
+
+
+orthographic similarity:
+	[a] on line 22 and [b] on line 23 are 0.60 similar!
+	[b] on line 23 and [r] on line 9 are 0.46 similar!
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 40 identifiers, there are 2 warnings.
+make phondiff
+python3 namesake.py ../IdentifierSimilarity/snippets/different/phonological_1.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 43 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/phonological_2.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 18 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/phonological_3.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 15 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/phonological_4.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 29 identifiers, there are 0 warnings.
+make semdiff
+python3 namesake.py ../IdentifierSimilarity/snippets/different/semantic_1.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 52 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/semantic_2.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 21 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/semantic_3.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 18 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/different/semantic_4.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 42 identifiers, there are 0 warnings.
+make phonsim
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/phonological_1.py
+
+
+orthographic similarity:
+
+phonological similarity:
+	[cur] on line 20 and [ker] on line 3 are 1.00 similar!
+
+semantic similarity:
+
+Processing 43 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/phonological_2.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 18 identifiers, there are 0 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/phonological_3.py
+
+
+orthographic similarity:
+
+phonological similarity:
+	[row] on line 9 and [rho] on line 11 are 1.00 similar!
+
+semantic similarity:
+
+Processing 15 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/phonological_4.py
+
+
+orthographic similarity:
+
+phonological similarity:
+	[max_y] on line 3 and [max_i] on line 3 are 0.83 similar!
+	[min_i] on line 3 and [min_y] on line 4 are 0.83 similar!
+
+semantic similarity:
+	[max_y] on line 3 and [max_i] on line 3 are 0.94 similar!
+	[min_i] on line 3 and [min_y] on line 4 are 0.94 similar!
+
+Processing 29 identifiers, there are 4 warnings.
+make orthsim
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/orthographic_1.py
+
+
+orthographic similarity:
+	[b] on line 3 and [d] on line 9 are 0.64 similar!
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 16 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/orthographic_2.py
+
+
+orthographic similarity:
+	[q] on line 5 and [d] on line 6 are 0.70 similar!
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 21 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/orthographic_3.py
+
+
+orthographic similarity:
+	[n] on line 2 and [u] on line 3 are 0.67 similar!
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 13 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/orthographic_4.py
+
+
+orthographic similarity:
+	[g] on line 3 and [q] on line 4 are 0.63 similar!
+
+phonological similarity:
+
+semantic similarity:
+
+Processing 38 identifiers, there are 1 warnings.
+make semsim
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/semantic_1.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+	[index] on line 2 and [list] on line 24 are 0.93 similar!
+
+Processing 50 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/semantic_2.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+	[short_string] on line 2 and [little_string] on line 4 are 1.00 similar!
+
+Processing 20 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/semantic_3.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+	[character] on line 3 and [letter] on line 4 are 0.93 similar!
+
+Processing 16 identifiers, there are 1 warnings.
+python3 namesake.py ../IdentifierSimilarity/snippets/similar/semantic_4.py
+
+
+orthographic similarity:
+
+phonological similarity:
+
+semantic similarity:
+	[start] on line 4 and [begin] on line 5 are 1.00 similar!
+
+Processing 41 identifiers, there are 1 warnings.

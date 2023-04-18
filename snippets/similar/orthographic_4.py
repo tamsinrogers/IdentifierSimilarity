@@ -1,20 +1,20 @@
-def function(z, s):
-    l = len(z)
-    q = 0
-    p = 1e9
-    b = ""
-    d = ""
-    for i in range(l):
-        f = len(s[i])
-        g = 0
-        for j in range(f):
-            if s[i][j] == 1:
-                g += 1
-        if g > q:
-            b = z[i]
-            q = g
-        if g < p:
-            d = z[i]
-            p = g
+def function(param, input):
+    length = len(param)
+    g = 0
+    q = 1e9
+    var = ""
+    ret = ""
+    for elem in range(length):
+        value = len(input[elem])
+        num = 0
+        for index in range(value):
+            if input[elem][index] == 1:
+                num += 1
+        if num > g:
+            var = param[elem]
+            g = num
+        if num < q:
+            ret = param[elem]
+            q = num
 
-    return b, d
+    return var, ret

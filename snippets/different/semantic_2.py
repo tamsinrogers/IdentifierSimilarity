@@ -15,3 +15,5 @@ def function(a):
             print(element[1])
         var = False
         boolean = False
+
+a = ["treble", "bass", "microphone", "amplifier", "guitar", "glasses", "anyone"]

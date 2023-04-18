@@ -1,11 +1,11 @@
-def function(a, string):
+def function(param, string):
     lst = []
-    for char in a:
-        for letter in char:
+    for character in param:
+        for letter in character:
             add = False
             if letter in string:
                 add = True
-            if char in string:
+            if character in string:
                 add = False
             if add == True:
                 lst.append(letter)

@@ -10,3 +10,5 @@ def function(input):
         else:
             t.insert(0, input[index])
     return lst, t
+
+input = [6, 8, 35, 17, 0, 9, 45]
