@@ -1,9 +1,19 @@
-def function(points, square):
+def function(points, func):
 
     err = 0
 
     for pair in points:
-        y_approx = square(pair[0])
+        y_approx = func(pair[0])
         err += (pair[1] - y_approx)**2
 
     return err/len(points)
+
+
+def f(x): return 2*x
+
+
+points = [(0, 1),
+          (1, 1),
+          (2, 3),
+          (3, 6),
+          (4, 10)]

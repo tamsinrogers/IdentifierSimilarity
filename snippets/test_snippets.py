@@ -74,64 +74,103 @@ def test_ortho_4():
 
 
 def test_phono_1():
+
+    # Test/Survey Function Parameters:
+    # --------------------------------
     test_data = [0, 1, 2, 3, 2, 1, 0]
     test_ker = [1, 1, 1]
 
-    # test version with similar identifiers
-    unpad_out_sim = phono_1_sim(test_data, test_ker)
-    pad_out_sim = phono_1_sim(test_data, test_ker, pad=True)
+    # Expected Output/Answer:
+    # -----------------------
+    correct_pad = np.array([1, 3, 6, 7, 6, 3, 1])
+    correct_no_pad = np.array([3, 6, 7, 6, 3])
 
-    assert len(unpad_out_sim) == len(test_data) - (len(test_ker) - 1)
-    assert len(pad_out_sim) == len(test_data)
+    # test both versions of the function with padding
+    pad_sim = np.array(phono_1_sim(test_data, test_ker, pad=True))
+    pad_dif = np.array(phono_1_dif(test_data, test_ker, pad=True))
 
-    # test version with different identifiers
-    unpad_out_dif = phono_1_dif(test_data, test_ker)
-    pad_out_dif = phono_1_dif(test_data, test_ker, pad=True)
+    assert pad_sim.all() == correct_pad.all()
+    assert pad_dif.all() == correct_pad.all()
 
-    assert unpad_out_sim == unpad_out_dif
-    assert pad_out_sim == pad_out_dif
+    # test both versions of the function without padding
+    no_pad_sim = np.array(phono_1_sim(test_data, test_ker))
+    no_pad_dif = np.array(phono_1_dif(test_data, test_ker))
+
+    assert no_pad_sim.all() == correct_no_pad.all()
+    assert no_pad_dif.all() == correct_no_pad.all()
 
 
 def test_phono_2():
 
-    def f(x): return x**2
+    # Test/Survey Function Parameters:
+    # --------------------------------
+    def f(x): return 2*x
 
-    x = np.arange(4)
-    y = f(x)
+    points = [(0, 1),
+              (1, 1),
+              (2, 3),
+              (3, 6),
+              (4, 10)]
 
-    points = [(x[i], y[i]) for i in range(len(x))]
+    # Expected Output/Answer:
+    # -----------------------
+    correct_result = 1.4
 
+    # test both versions of the function
     error_sim = phono_2_sim(points, f)
     error_dif = phono_2_dif(points, f)
 
-    assert np.isclose(error_sim, 0)
-    assert np.isclose(error_dif, 0)
+    assert error_sim == correct_result
+    assert error_dif == correct_result
 
 
 def test_phono_3():
 
+    # phonological_3.py uses random, so the survey question can't ask
+    # what the EXACT output will be. I think the best way to phrase
+    # it is something along the lines of: "Which of the following is a
+    # plausible output of the function?"
     random.seed(0)
 
-    n = 100
+    # Test/Survey Function Parameters:
+    # --------------------------------
+    n = 3
     rho = 0.5
 
+    # Expected Output/Answer:
+    # -----------------------
+    correct_result = np.array([
+        [0, 0, 1],
+        [1, 0, 1],
+        [0, 1, 1]])
+
+    # test both versions of the function
     array_sim = np.array(phono_3_sim(n, rho))
     array_dif = np.array(phono_3_dif(n, rho))
 
-    assert array_sim.shape == (n, n)
-    assert array_dif.shape == (n, n)
-
-    assert np.isclose(np.mean(array_sim), 0.5, rtol=0.05)
-    assert np.isclose(np.mean(array_dif), 0.5, rtol=0.05)
+    assert array_sim.all() == correct_result.all()
+    assert array_dif.all() == correct_result.all()
 
 
 def test_phono_4():
 
-    mat_sim = phono_4_sim(2, 2)
-    mat_dif = phono_4_dif(2, 2)
+    # Test/Survey Function Parameters:
+    # --------------------------------
+    n = 3
+    s = 2
 
-    assert mat_sim == mat_dif
-    assert mat_dif == [[2, 0], [0, 2]]
+    # Expected Output/Answer:
+    # -----------------------
+    correct_result = np.array([
+        [2, 0, 0],
+        [0, 2, 0],
+        [0, 0, 2]])
+
+    mat_sim = np.array(phono_4_sim(n, s))
+    mat_dif = np.array(phono_4_dif(n, s))
+
+    assert mat_sim.all() == correct_result.all()
+    assert mat_dif.all() == correct_result.all()
 
 
 def test_semantic_1():

@@ -16,3 +16,7 @@ def function(n, rho):
         mat.append(row)
 
     return mat
+
+
+n = 3
+rho = 0.5

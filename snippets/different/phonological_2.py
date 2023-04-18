@@ -2,8 +2,18 @@ def function(points, func):
 
     err = 0
 
-    for xy_pair in points:
-        y_approx = func(xy_pair[0])
-        err += (xy_pair[1] - y_approx)**2
+    for pt in points:
+        y_approx = func(pt[0])
+        err += (pt[1] - y_approx)**2
 
     return err/len(points)
+
+
+def f(x): return 2*x
+
+
+points = [(0, 1),
+          (1, 1),
+          (2, 3),
+          (3, 6),
+          (4, 10)]

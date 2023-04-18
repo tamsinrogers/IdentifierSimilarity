@@ -14,3 +14,7 @@ def function(n, s=1):
         eye.append(row)
 
     return eye
+
+
+n = 3
+s = 2
