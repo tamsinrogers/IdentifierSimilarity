@@ -1,11 +1,11 @@
-def function(n, s=1):
+def function(num, s=1):
 
     eye = []
 
-    for r in range(n):
+    for r in range(num):
         row = []
 
-        for i in range(n):
+        for i in range(num):
             if i == r:
                 row.append(s)
             else:
@@ -16,5 +16,5 @@ def function(n, s=1):
     return eye
 
 
-n = 3
+num = 3
 s = 2

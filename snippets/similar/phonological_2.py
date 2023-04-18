@@ -1,12 +1,12 @@
 def function(points, func):
 
-    err = 0
+    pare = 0
 
     for pair in points:
         y_approx = func(pair[0])
-        err += (pair[1] - y_approx)**2
+        pare += (pair[1] - y_approx)**2
 
-    return err/len(points)
+    return pare/len(points)
 
 
 def f(x): return 2*x
