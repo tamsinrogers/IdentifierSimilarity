@@ -1,19 +1,12 @@
 # IdentifierSimilarity
 
-IdentifierSimilarity is an extension of _Namesake: A Checker of Lexical Similarity in Identifier Names_.  In this project, Namesake is used to "score" identifiers for similarity against each other in order to further assess lexical similarity in code and the impact of this similarity on the level of ease developers have debugging code.
+IdentifierSimilarity is an extension of _Namesake: A Checker of Lexical Similarity in Identifier Names_.  In this project, Namesake is used to "score" identifiers for similarity against each other in order to further assess lexical similarity in code and the impact of this similarity on the level of ease developers have debugging code in a survey setting.
 
 Namesake is an open-source tool for assessing confusing naming combinations in Python programs.
 Namesake flags confusing identifier naming combinations that are similar in:
 * orthography (word form)
 * phonology (pronunciation)
 * or semantics (meaning)
-
-## 📊 Data
-Using buggy code snippets containing commonly-confused identifiers, we assessed the debugging ability of programmers
-
-<img width="598" alt="Screenshot 2024-08-13 at 10 16 19 AM" src="https://github.com/user-attachments/assets/76dbae27-7394-4209-9865-e1810d1a2fc7">
-<img width="599" alt="Screenshot 2024-08-13 at 10 16 40 AM" src="https://github.com/user-attachments/assets/5687146c-aaf8-43b1-b86c-8eda8a59d650">
-
 
 
 ## 💡 What is Lexical Similarity in Code?
@@ -27,8 +20,8 @@ Lexical access describes the retrieval of word shape (orthography), pronunciatio
 </p>
 
 Survery participants were presented either code snippet A (top), which contains the orthographically dissimilar identifiers "l" and "u" or code snippet B (bottom), which contains the orthographically similar identifiers "x" and "y".
-<img width="594" alt="Screenshot 2024-08-13 at 10 17 01 AM" src="https://github.com/user-attachments/assets/fe164b0e-4402-4af0-985b-c1b2d0a9e3de">
-<img width="592" alt="Screenshot 2024-08-13 at 10 18 43 AM" src="https://github.com/user-attachments/assets/a61710f5-ef77-4d81-a0c5-f733b01996c7">
+<img width="300" alt="Screenshot 2024-08-13 at 10 17 01 AM" src="https://github.com/user-attachments/assets/fe164b0e-4402-4af0-985b-c1b2d0a9e3de">
+<img width="300" alt="Screenshot 2024-08-13 at 10 18 43 AM" src="https://github.com/user-attachments/assets/a61710f5-ef77-4d81-a0c5-f733b01996c7">
 
 
 **Phonological similarity** describes two words that share a similar or identical pronunciation, also known as homophones:
@@ -40,8 +33,8 @@ Survery participants were presented either code snippet A (top), which contains 
 
 Survery participants were presented either code snippet A (top), which contains the phonologically dissimilar identifiers "pt" and "err" or code snippet B (bottom), which contains the phonologically similar identifiers "pare" and "pair".
 
-<img width="517" alt="Screenshot 2024-08-13 at 10 19 22 AM" src="https://github.com/user-attachments/assets/e4a1c697-f70d-4a8e-a75f-23e77f96ad54">
-<img width="554" alt="Screenshot 2024-08-13 at 10 19 51 AM" src="https://github.com/user-attachments/assets/6a0a0cad-cf9a-478d-8762-7a7e96e3296f">
+<img width="300" alt="Screenshot 2024-08-13 at 10 19 22 AM" src="https://github.com/user-attachments/assets/e4a1c697-f70d-4a8e-a75f-23e77f96ad54">
+<img width="300" alt="Screenshot 2024-08-13 at 10 19 51 AM" src="https://github.com/user-attachments/assets/6a0a0cad-cf9a-478d-8762-7a7e96e3296f">
 
 
 
@@ -58,6 +51,12 @@ Survery participants were presented either code snippet A (top), which contains 
 <img width="589" alt="Screenshot 2024-08-13 at 10 23 05 AM" src="https://github.com/user-attachments/assets/863cefcb-b40f-44f2-bc09-b5677cfe1ae5">
 
 * Note that there are 4 different potential code snippet versions of each similarity genre available to be presented to any given participant in the survey.
+
+  ## 📊 Results
+Using buggy code snippets containing commonly-confused identifiers, we assessed the debugging ability of programmers as follows:
+
+<img width="300" alt="Screenshot 2024-08-13 at 10 16 19 AM" src="https://github.com/user-attachments/assets/76dbae27-7394-4209-9865-e1810d1a2fc7">
+<img width="300" alt="Screenshot 2024-08-13 at 10 16 40 AM" src="https://github.com/user-attachments/assets/5687146c-aaf8-43b1-b86c-8eda8a59d650">
 
 ## ⚙️ Installing Namesake:
 first, to install the requirements:
