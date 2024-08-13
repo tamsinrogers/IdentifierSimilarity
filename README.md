@@ -19,10 +19,11 @@ Lexical access describes the retrieval of word shape (orthography), pronunciatio
   <img width="429" alt="Screenshot 2024-08-13 at 10 11 37 AM" src="https://github.com/user-attachments/assets/344edd80-9f80-4b0f-b8de-4bb1b7a26f59">
 </p>
 
-Survery participants were presented either code snippet A (top), which contains the orthographically dissimilar identifiers "l" and "u" or code snippet B (bottom), which contains the orthographically similar identifiers "x" and "y".
+Survery participants were presented either code snippet A (left), which contains the orthographically dissimilar identifiers "l" and "u" or code snippet B (right), which contains the orthographically similar identifiers "x" and "y".
+<p>
 <img width="300" alt="Screenshot 2024-08-13 at 10 17 01 AM" src="https://github.com/user-attachments/assets/fe164b0e-4402-4af0-985b-c1b2d0a9e3de">
 <img width="300" alt="Screenshot 2024-08-13 at 10 18 43 AM" src="https://github.com/user-attachments/assets/a61710f5-ef77-4d81-a0c5-f733b01996c7">
-
+</p>
 
 **Phonological similarity** describes two words that share a similar or identical pronunciation, also known as homophones:
 
@@ -31,11 +32,12 @@ Survery participants were presented either code snippet A (top), which contains 
   <img width="423" alt="Screenshot 2024-08-13 at 10 12 00 AM" src="https://github.com/user-attachments/assets/18f02dfd-9ecb-47b7-a8c2-0343d444dcb4">
 </p>
 
-Survery participants were presented either code snippet A (top), which contains the phonologically dissimilar identifiers "pt" and "err" or code snippet B (bottom), which contains the phonologically similar identifiers "pare" and "pair".
+Survery participants were presented either code snippet A (left), which contains the phonologically dissimilar identifiers "pt" and "err" or code snippet B (right), which contains the phonologically similar identifiers "pare" and "pair".
 
+<p>
 <img width="300" alt="Screenshot 2024-08-13 at 10 19 22 AM" src="https://github.com/user-attachments/assets/e4a1c697-f70d-4a8e-a75f-23e77f96ad54">
 <img width="300" alt="Screenshot 2024-08-13 at 10 19 51 AM" src="https://github.com/user-attachments/assets/6a0a0cad-cf9a-478d-8762-7a7e96e3296f">
-
+</p>
 
 
 **Semantic similarity** describes words that share a meaning (synonyms):
@@ -45,10 +47,12 @@ Survery participants were presented either code snippet A (top), which contains 
   <img width="425" alt="Screenshot 2024-08-13 at 10 12 16 AM" src="https://github.com/user-attachments/assets/3ff87042-7c66-47d5-a058-d8870384fc0b">
 </p>
 
-Survery participants were presented either code snippet A (top), which contains the semantically dissimilar identifiers "element" and "var" or code snippet B (bottom), which contains the semantically similar identifiers "short_string" and "little_string".
+Survery participants were presented either code snippet A (left), which contains the semantically dissimilar identifiers "element" and "var" or code snippet B (right), which contains the semantically similar identifiers "short_string" and "little_string".
 
-<img width="591" alt="Screenshot 2024-08-13 at 10 22 47 AM" src="https://github.com/user-attachments/assets/08c192a1-25f7-4514-8182-bf357c9aeef8">
-<img width="589" alt="Screenshot 2024-08-13 at 10 23 05 AM" src="https://github.com/user-attachments/assets/863cefcb-b40f-44f2-bc09-b5677cfe1ae5">
+<p>
+<img width="300" alt="Screenshot 2024-08-13 at 10 22 47 AM" src="https://github.com/user-attachments/assets/08c192a1-25f7-4514-8182-bf357c9aeef8">
+<img width="300" alt="Screenshot 2024-08-13 at 10 23 05 AM" src="https://github.com/user-attachments/assets/863cefcb-b40f-44f2-bc09-b5677cfe1ae5">
+</p>
 
 * Note that there are 4 different potential code snippet versions of each similarity genre available to be presented to any given participant in the survey.
 
