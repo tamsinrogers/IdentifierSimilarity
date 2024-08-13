@@ -16,7 +16,7 @@ Lexical access describes the retrieval of word shape (orthography), pronunciatio
 
 
 <p align="center">
-  <img width="400" height="360" src="/documentation/imgs/ortho_example.drawio.png">
+  <img width="429" alt="Screenshot 2024-08-13 at 10 11 37 AM" src="https://github.com/user-attachments/assets/344edd80-9f80-4b0f-b8de-4bb1b7a26f59">
 </p>
 
 
@@ -24,7 +24,7 @@ Lexical access describes the retrieval of word shape (orthography), pronunciatio
 
 
 <p align="center">
-  <img width="400" height="290" src="/documentation/imgs/real_phono.drawio.png">
+  <img width="423" alt="Screenshot 2024-08-13 at 10 12 00 AM" src="https://github.com/user-attachments/assets/18f02dfd-9ecb-47b7-a8c2-0343d444dcb4">
 </p>
 
 
@@ -32,7 +32,7 @@ Lexical access describes the retrieval of word shape (orthography), pronunciatio
 
 
 <p align="center">
-  <img width="400" height="350" src="/documentation/imgs/semantic.drawio.png">
+  <img width="425" alt="Screenshot 2024-08-13 at 10 12 16 AM" src="https://github.com/user-attachments/assets/3ff87042-7c66-47d5-a058-d8870384fc0b">
 </p>
 
 
@@ -56,7 +56,7 @@ Threshold values must be between 0 and 1.
 
 ## 👀 Example Running Namesake:
 <p align="center">
-  <img width="800" src="/documentation/imgs/demo-Namesake.png">
+  <img width="820" alt="Screenshot 2024-08-13 at 10 12 31 AM" src="https://github.com/user-attachments/assets/3984e73c-5182-48c4-919c-4a87261a3005">
 </p>
 
 ## 📝 Citation:
