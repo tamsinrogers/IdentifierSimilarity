@@ -36,7 +36,7 @@ Survery participants were presented either code snippet A (left), which contains
 
 <p>
 <img width="300" alt="Screenshot 2024-08-13 at 10 19 22 AM" src="https://github.com/user-attachments/assets/e4a1c697-f70d-4a8e-a75f-23e77f96ad54">
-<img width="300" alt="Screenshot 2024-08-13 at 10 19 51 AM" src="https://github.com/user-attachments/assets/6a0a0cad-cf9a-478d-8762-7a7e96e3296f">
+<img width="310" alt="Screenshot 2024-08-13 at 10 19 51 AM" src="https://github.com/user-attachments/assets/6a0a0cad-cf9a-478d-8762-7a7e96e3296f">
 </p>
 
 
