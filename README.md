@@ -57,11 +57,26 @@ Survery participants were presented either code snippet A (left), which contains
 
 * Note that there are 4 different potential code snippet versions of each similarity genre available to be presented to any given participant in the survey.
 
+## ❓ How are Identifiers Scored for Similarity?
+Identifier pairs are awarded a score 0-100 based on how similar they are in an orthographic (look), phonological (sound), or semantic (meaning), basis.
+
+An example of scoring for phonological similarity, using the International Phonetic Alphabet (IPA) to find the most similar IPA of out-of-vocabulary and IPA of in-vocabulary words.
+<p align="center">
+<img width="611" alt="Screenshot 2024-08-13 at 10 36 32 AM" src="https://github.com/user-attachments/assets/8a91df61-bae9-4577-ba96-ed46f5f582f2">
+</p>
+
+This below output is an example of a Namesake warning that two identifiers within a code snippet are similar.  
+<p align="center">
+<img width="300" alt="Screenshot 2024-08-13 at 10 36 10 AM" src="https://github.com/user-attachments/assets/8c53a7e0-a0d4-43c8-b547-f15e37747f9a">
+</p>
+
   ## 📊 Results
 Using buggy code snippets containing commonly-confused identifiers, we assessed the debugging ability of programmers as follows:
 
-<img width="300" alt="Screenshot 2024-08-13 at 10 16 19 AM" src="https://github.com/user-attachments/assets/76dbae27-7394-4209-9865-e1810d1a2fc7">
-<img width="300" alt="Screenshot 2024-08-13 at 10 16 40 AM" src="https://github.com/user-attachments/assets/5687146c-aaf8-43b1-b86c-8eda8a59d650">
+<p align="center">
+<img width="500" alt="Screenshot 2024-08-13 at 10 16 19 AM" src="https://github.com/user-attachments/assets/76dbae27-7394-4209-9865-e1810d1a2fc7">
+<img width="500" alt="Screenshot 2024-08-13 at 10 16 40 AM" src="https://github.com/user-attachments/assets/5687146c-aaf8-43b1-b86c-8eda8a59d650">
+</p>
 
 ## ⚙️ Installing Namesake:
 first, to install the requirements:
