@@ -20,7 +20,8 @@ Lexical access describes the retrieval of word shape (orthography), pronunciatio
 </p>
 
 Survery participants were presented either code snippet A (left), which contains the orthographically dissimilar identifiers "l" and "u" or code snippet B (right), which contains the orthographically similar identifiers "x" and "y".
-<p>
+
+<p align="center">
 <img width="300" alt="Screenshot 2024-08-13 at 10 17 01 AM" src="https://github.com/user-attachments/assets/fe164b0e-4402-4af0-985b-c1b2d0a9e3de">
 <img width="300" alt="Screenshot 2024-08-13 at 10 18 43 AM" src="https://github.com/user-attachments/assets/a61710f5-ef77-4d81-a0c5-f733b01996c7">
 </p>
@@ -34,7 +35,7 @@ Survery participants were presented either code snippet A (left), which contains
 
 Survery participants were presented either code snippet A (left), which contains the phonologically dissimilar identifiers "pt" and "err" or code snippet B (right), which contains the phonologically similar identifiers "pare" and "pair".
 
-<p>
+<p align="center">
 <img width="300" alt="Screenshot 2024-08-13 at 10 19 22 AM" src="https://github.com/user-attachments/assets/e4a1c697-f70d-4a8e-a75f-23e77f96ad54">
 <img width="325" alt="Screenshot 2024-08-13 at 10 19 51 AM" src="https://github.com/user-attachments/assets/6a0a0cad-cf9a-478d-8762-7a7e96e3296f">
 </p>
@@ -49,7 +50,7 @@ Survery participants were presented either code snippet A (left), which contains
 
 Survery participants were presented either code snippet A (left), which contains the semantically dissimilar identifiers "element" and "var" or code snippet B (right), which contains the semantically similar identifiers "short_string" and "little_string".
 
-<p>
+<p align="center">
 <img width="300" alt="Screenshot 2024-08-13 at 10 22 47 AM" src="https://github.com/user-attachments/assets/08c192a1-25f7-4514-8182-bf357c9aeef8">
 <img width="300" alt="Screenshot 2024-08-13 at 10 23 05 AM" src="https://github.com/user-attachments/assets/863cefcb-b40f-44f2-bc09-b5677cfe1ae5">
 </p>
