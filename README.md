@@ -70,7 +70,15 @@ This below output is an example of a Namesake warning that two identifiers withi
   <img width="500" alt="Screenshot 2024-08-13 at 10 36 32 AM" src="https://github.com/user-attachments/assets/8a91df61-bae9-4577-ba96-ed46f5f582f2">
 </p>
 
-  ## 📊 Results
+## 📊 Data Collection & Results
+In a survey context, we screened the skill level of local programmers and presented them with a 12-question quiz based on code snippet prompts.
+<p align="center">
+<img width="500" alt="Screenshot 2024-08-13 at 11 28 45 AM" src="https://github.com/user-attachments/assets/4dc93896-17f4-4f77-b9aa-d88526554d44">
+<img width="500" alt="Screenshot 2024-08-13 at 11 29 02 AM" src="https://github.com/user-attachments/assets/d2aea256-4ff3-4961-a3e0-25a941c5943c">
+<img width="500" alt="Screenshot 2024-08-13 at 11 29 50 AM" src="https://github.com/user-attachments/assets/07c10689-c932-44fb-8336-3a190e042150">
+
+</p>
+
 Using buggy code snippets containing commonly-confused identifiers, we assessed the debugging ability of programmers as follows:
 
 <p align="center">
