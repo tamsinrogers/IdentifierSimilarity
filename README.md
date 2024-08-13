@@ -62,12 +62,12 @@ Identifier pairs are awarded a score 0-100 based on how similar they are in an o
 
 An example of scoring for phonological similarity, using the International Phonetic Alphabet (IPA) to find the most similar IPA of out-of-vocabulary and IPA of in-vocabulary words.
 <p align="center">
-<img width="611" alt="Screenshot 2024-08-13 at 10 36 32 AM" src="https://github.com/user-attachments/assets/8a91df61-bae9-4577-ba96-ed46f5f582f2">
+  <img width="500" alt="Screenshot 2024-08-13 at 10 36 10 AM" src="https://github.com/user-attachments/assets/8c53a7e0-a0d4-43c8-b547-f15e37747f9a">
 </p>
 
 This below output is an example of a Namesake warning that two identifiers within a code snippet are similar.  
 <p align="center">
-<img width="300" alt="Screenshot 2024-08-13 at 10 36 10 AM" src="https://github.com/user-attachments/assets/8c53a7e0-a0d4-43c8-b547-f15e37747f9a">
+  <img width="500" alt="Screenshot 2024-08-13 at 10 36 32 AM" src="https://github.com/user-attachments/assets/8a91df61-bae9-4577-ba96-ed46f5f582f2">
 </p>
 
   ## 📊 Results
