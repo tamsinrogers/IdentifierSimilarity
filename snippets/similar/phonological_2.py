@@ -9,7 +9,7 @@ def function(points, func):
     return pare/len(points)
 
 
-def f(x): return 2*x
+def func(x): return 2*x
 
 
 points = [(0, 1),
